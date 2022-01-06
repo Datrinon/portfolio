@@ -23,6 +23,9 @@ function About() {
         <p className="bio-text">
           {bioText}
         </p>
+        <p>
+        Please scroll below to see some of the projects that I've accomplished. Thanks for visiting my website! 
+        </p>
       </div>
       <div className="profile-pic">
         <img
