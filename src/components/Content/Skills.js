@@ -16,7 +16,7 @@ function Skills() {
                 {list.skills.map((skill, index) => {
                   return (
                     <li key={index}>
-                      <skill.icon/>
+                      <skill.icon color={skill.color}/>
                       <span>{skill.name}</span>
                     </li>
                   )
