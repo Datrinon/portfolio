@@ -6,9 +6,9 @@ function Header() {
   return (
     <header>
       <div className="left-end">
-        <div className="logo">
+        <h1 className="logo">
           Dan Trinh
-        </div>
+        </h1>
       </div>
       <div className="right-end">
         <nav>
