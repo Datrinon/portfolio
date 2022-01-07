@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProjectBanner() {
+function FeaturedProject() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function ProjectBanner() {
   )
 }
 
-export default ProjectBanner
+export default FeaturedProject

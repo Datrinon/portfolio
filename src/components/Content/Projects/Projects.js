@@ -1,10 +1,13 @@
 import React from 'react'
+import Section from '../Section'
 
 function Projects() {
   return (
-    <div>
-      Projects.
-    </div>
+    <Section title={"Projects"}>
+      <div className="featured">
+        <h3>Featured</h3>
+      </div>
+    </Section>
   )
 }
 
