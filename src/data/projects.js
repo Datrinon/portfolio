@@ -3,10 +3,16 @@ import ICON_DIC from "./icons"
 // pic imports
 import RoadTrypper from "./photos/roadtrypper.jpg"
 import Shopping from "./photos/shopping.jpg"
-import Battleships from "./photos/battleships.jpg"
+import Battleships from "./photos/battleships.png"
 import Memory from "./photos/memory.jpg"
 import CV from "./photos/cv.png"
 import Weather from "./photos/weather.jpg"
+import Bulletin from "./photos/bulletin.jpg"
+import TodoList from "./photos/todolist.jpg"
+import Restaurant from "./photos/restaurant.jpg"
+import TicTacToe from "./photos/tictactoe.jpg"
+import PixelPainter from "./photos/painter.jpg"
+import Roshambo from "./photos/roshambo.jpg"
 
 export const FEATURED_PROJECTS = [
   {
@@ -41,6 +47,7 @@ export const FEATURED_PROJECTS = [
       ICON_DIC.js,
       ICON_DIC.html5,
       ICON_DIC.css,
+      ICON_DIC.webpack
     ],
     finishDate: "Oct. 2021",
     photo: Battleships,
@@ -79,6 +86,7 @@ export const ODIN_PROJECTS = [
       ICON_DIC.js,
       ICON_DIC.html5,
       ICON_DIC.css,
+      ICON_DIC.webpack
     ],
     finishDate: "Sep. 2021",
     photo: Weather,
@@ -94,9 +102,9 @@ export const ODIN_PROJECTS = [
       ICON_DIC.css,
     ],
     finishDate: "Jul. 2021",
-    photo: null,
-    repo: null,
-    demo: null
+    photo: Bulletin,
+    repo: "https://github.com/Datrinon/BulletinBoard",
+    demo: "https://datrinon.github.io/BulletinBoard/"
   },
   {
     name: "To-Do List",
@@ -105,24 +113,26 @@ export const ODIN_PROJECTS = [
       ICON_DIC.js,
       ICON_DIC.html5,
       ICON_DIC.css,
+      ICON_DIC.webpack
     ],
     finishDate: "Sep. 2021",
-    photo: null,
-    repo: null,
-    demo: null
+    photo: TodoList,
+    repo: "https://github.com/Datrinon/TodoList",
+    demo: "https://datrinon.github.io/TodoList/"
   },
   {
-    name: "Restaurant Site",
+    name: "Ocean Kitchens Mockup",
     desc: "An informational website about a fictitious seafood restaurant.",
     builtWith: [
       ICON_DIC.js,
       ICON_DIC.html5,
       ICON_DIC.css,
+      ICON_DIC.webpack
     ],
     finishDate: "Aug. 2021",
-    photo: null,
-    repo: null,
-    demo: null
+    photo: Restaurant,
+    repo: "https://github.com/Datrinon/project-restaurant",
+    demo: "https://datrinon.github.io/project-restaurant/"
   },
   {
     name: "Tic Tac Toe",
@@ -133,9 +143,9 @@ export const ODIN_PROJECTS = [
       ICON_DIC.css,
     ],
     finishDate: "Aug. 2021",
-    photo: null,
-    repo: null,
-    demo: null
+    photo: TicTacToe,
+    repo: "https://github.com/Datrinon/tictactoe-odinproject",
+    demo: "https://datrinon.github.io/tictactoe-odinproject/"
   },
   {
     name: "Pixel Painter",
@@ -146,24 +156,33 @@ export const ODIN_PROJECTS = [
       ICON_DIC.css,
     ],
     finishDate: "Jul. 2021",
-    photo: null,
-    repo: null,
-    demo: null
+    photo: PixelPainter,
+    repo: "https://github.com/Datrinon/PixelPainter",
+    demo: "https://datrinon.github.io/PixelPainter/"
   },
   {
     name: "Rock-Paper-Scissors",
-    desc: "Play Rock Paper Scissors.",
+    desc: "Play Rock Paper Scissors against a CPU.",
     builtWith: [
       ICON_DIC.js,
       ICON_DIC.html5,
       ICON_DIC.css,
     ],
     finishDate: "Jul. 2021",
-    photo: null,
-    repo: null,
-    demo: null
-  },
-  {
-
+    photo: Roshambo,
+    repo: "https://github.com/Datrinon/roshambo",
+    demo: "https://datrinon.github.io/roshambo/"
   }
 ]
+
+/**
+ * School projects (optional, for now, keeping in mind mvp)
+ * Data mining project
+ * Systems analysis project
+ * Android app project
+ * Club sticker project
+ * Emaar malls project
+ * Tableau project
+ * Business sim project
+ * Emaar Malls case study project
+ */
