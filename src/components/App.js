@@ -5,6 +5,7 @@ import About from './Content/About';
 import Skills from './Content/Skills';
 import Projects from './Content/Projects/Projects';
 import Resume from './Content/Resume';
+import Contact from './Content/Contact';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           <Resume/>
         </div>
       </main>
+      <footer id="contact">
+        <Contact/>
+      </footer>
     </div>
   );
 }
