@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderLink from './HeaderLink'
 
 
-function Header() {
+function Header({setDarkMode}) {
   return (
     <header>
       <div className="left-end">
@@ -18,6 +18,7 @@ function Header() {
             <HeaderLink href={"#projects"} text={"Projects"} />
             <HeaderLink href={"#resume"} text={"Resume"} />
             <HeaderLink href={"#contact"} text={"Contact"} />
+            <button onClick={() => setDarkMode(prev => !prev)}>Toggle Dark Mode</button>
           </ul>
         </nav>
       </div>

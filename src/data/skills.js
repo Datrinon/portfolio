@@ -27,7 +27,8 @@ export const SKILLS = [
       ICON_DIC.git,
       ICON_DIC.bash,
       ICON_DIC.webpack,
-      ICON_DIC.excel
+      ICON_DIC.excel,
+      ICON_DIC.photoshop
     ]
   }
 ]

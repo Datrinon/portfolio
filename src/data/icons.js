@@ -1,7 +1,7 @@
 import { FaHtml5, FaReact } from "react-icons/fa"
 import { DiCss3, DiJava, DiPython, DiGit } from "react-icons/di"
 import { IoLogoJavascript } from "react-icons/io"
-import { SiWebpack, SiFirebase } from "react-icons/si"
+import { SiWebpack, SiFirebase, SiAdobephotoshop } from "react-icons/si"
 import { VscTerminalBash, VscRegex } from "react-icons/vsc"
 import { AiFillFileExcel } from "react-icons/ai"
 
@@ -65,6 +65,11 @@ const ICON_DIC = {
   excel: {
     name: "Excel",
     icon: AiFillFileExcel,
+    color: "rgb(255,0,0)"
+  },
+  photoshop: {
+    name: "Photoshop",
+    icon: SiAdobephotoshop,
     color: "rgb(255,0,0)"
   }
 }
