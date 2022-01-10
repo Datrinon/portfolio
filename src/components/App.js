@@ -10,6 +10,7 @@ import Contact from './Content/Contact';
 function App() {
   return (
     <div>
+      <a name="top"></a>
       <Header/>
       <main role="main">
         <div id="about">
@@ -28,6 +29,7 @@ function App() {
       <footer id="contact">
         <Contact/>
       </footer>
+      <a href="#top">Top</a>
     </div>
   );
 }
