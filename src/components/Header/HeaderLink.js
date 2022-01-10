@@ -1,9 +1,10 @@
 import React from 'react'
+import * as H from './Header.styled'
 
 function HeaderLink({href, text}) {
   return (
     <li>
-      <a href={href}>{text}</a>
+      <H.StyledHeaderLink href={href}>{text}</H.StyledHeaderLink>
     </li>
   )
 }

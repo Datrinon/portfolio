@@ -6,12 +6,14 @@ import * as H from "./Header.styled";
 
 function Header({ setDarkMode }) {
 
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <H.Header menuOpen={menuOpen}>
       <H.LogoContainer className="left-end">
-        <H.MenuToggleButton onClick={() => setMenuOpen(prev => !prev)}>
+        <H.MenuToggleButton
+          className="menu-toggle-button"
+          onClick={() => setMenuOpen(prev => !prev)}>
           {menuOpen ?
             <VscClose /> :
             <VscMenu />}
@@ -20,7 +22,7 @@ function Header({ setDarkMode }) {
           Dan Trinh
         </H.NameHeading>
       </H.LogoContainer>
-      <div className="menu">
+      <H.Menu className="menu">
         <nav className="nav-links">
           <ul className="page-sections">
             <HeaderLink href={"#about"} text={"About"} />
@@ -31,7 +33,7 @@ function Header({ setDarkMode }) {
             <button onClick={() => setDarkMode(prev => !prev)}>Toggle Dark Mode</button>
           </ul>
         </nav>
-      </div>
+      </H.Menu>
     </H.Header>
   )
 }

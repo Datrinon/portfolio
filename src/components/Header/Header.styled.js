@@ -3,6 +3,7 @@ import { device } from '../_styled/breakpoints.style';
 import colors from '../_styled/colors.styled';
 
 export const Header = styled.header`
+  /* This is the CSS for a vertically spanning sidebar header. */
   position: sticky;
   border: 1px solid ${colors.ORANGE};
   background-color: inherit;
@@ -15,12 +16,36 @@ export const Header = styled.header`
     background-color: inherit;
     width: 50%;
     height: 100vh;
-    right: ${props => props.menuOpen ? "initial" : "100%"}
+    transform: ${props => props.menuOpen ? "translateX(100%)" : "initial"};
+    right: 100%;
+    /* TODO */
+    /* This is causing flashes on resizing. */
+    /* Solved -- solution was to make it hidden by default, then only USE transform when it's open */
+    transition: transform 300ms;
   }
 
-  & .left-end {
+  /* This is the CSS for a horizontally spanning header. */
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 
+    & .menu-toggle-button {
+      visibility: hidden;
+    }
+
+    & .menu {
+      all : unset;
+    }
+
+    & .nav-links .page-sections {
+      display: flex;
+      flex-direction: row;
+    }
   }
+
+
 `
 
 export const LogoContainer = styled.div`
@@ -39,4 +64,16 @@ export const NameHeading = styled.h1`
 
 export const MenuToggleButton = styled.button`
   all: unset;
+  cursor: pointer;
+`
+
+export const Menu = styled.div`
+  & .nav-links .page-sections li {
+    margin: 0 0.25em;
+  }
+`
+
+export const StyledHeaderLink = styled.a`
+  text-decoration: none;
+  font-weight: bold;
 `
