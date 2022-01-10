@@ -1,17 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HeaderLink from './HeaderLink'
+import { VscMenu, VscClose } from 'react-icons/vsc'
 
+import * as H from "./Header.styled";
 
-function Header({setDarkMode}) {
+function Header({ setDarkMode }) {
+
+  const [menuOpen, setMenuOpen] = useState(true);
+
   return (
-    <header>
-      <div className="left-end">
-        <h1 className="logo">
+    <H.Header menuOpen={menuOpen}>
+      <H.LogoContainer className="left-end">
+        <H.MenuToggleButton onClick={() => setMenuOpen(prev => !prev)}>
+          {menuOpen ?
+            <VscClose /> :
+            <VscMenu />}
+        </H.MenuToggleButton>
+        <H.NameHeading className="logo">
           Dan Trinh
-        </h1>
-      </div>
-      <div className="right-end">
-        <nav>
+        </H.NameHeading>
+      </H.LogoContainer>
+      <div className="menu">
+        <nav className="nav-links">
           <ul className="page-sections">
             <HeaderLink href={"#about"} text={"About"} />
             <HeaderLink href={"#skills"} text={"Skills"} />
@@ -22,7 +32,7 @@ function Header({setDarkMode}) {
           </ul>
         </nav>
       </div>
-    </header>
+    </H.Header>
   )
 }
 

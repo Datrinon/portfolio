@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 
-import '../css/App.css';
 import '../css/reset.css';
+import '../css/App.css';
 import Header from './Header/Header';
 import About from './Content/About';
 import Skills from './Content/Skills';
