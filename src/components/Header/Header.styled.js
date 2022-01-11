@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../_styled/breakpoints.style';
+import { device } from '../_styled/breakpoints.styled';
 import colors from '../_styled/colors.styled';
 
 export const Header = styled.header`
@@ -42,6 +42,7 @@ export const Header = styled.header`
     & .nav-links .page-sections {
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
   }
 
@@ -60,6 +61,7 @@ export const LogoContainer = styled.div`
 
 export const NameHeading = styled.h1`
   font-size: 3rem;
+  flex: 0 0 auto;
 `
 
 export const MenuToggleButton = styled.button`
@@ -69,7 +71,9 @@ export const MenuToggleButton = styled.button`
 
 export const Menu = styled.div`
   & .nav-links .page-sections li {
-    margin: 0 0.25em;
+    margin: 1em 0.5em;
+    font-size: 1.25em;
+    /* margin: 0 0.25em; */
   }
 `
 

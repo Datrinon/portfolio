@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import HeaderLink from './HeaderLink'
 import { VscMenu, VscClose } from 'react-icons/vsc'
 
 import * as H from "./Header.styled";
+import { DarkModeContext } from '../App';
+import DarkModeToggle from '../DarkModeToggle';
 
 function Header({ setDarkMode }) {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const darkMode = useContext(DarkModeContext);
 
   return (
     <H.Header menuOpen={menuOpen}>
@@ -30,8 +33,10 @@ function Header({ setDarkMode }) {
             <HeaderLink href={"#projects"} text={"Projects"} />
             <HeaderLink href={"#resume"} text={"Resume"} />
             <HeaderLink href={"#contact"} text={"Contact"} />
-            <button onClick={() => setDarkMode(prev => !prev)}>Toggle Dark Mode</button>
-          </ul>
+            <li>
+              <DarkModeToggle setDarkMode={setDarkMode}/>
+            </li>
+          </ul> 
         </nav>
       </H.Menu>
     </H.Header>
