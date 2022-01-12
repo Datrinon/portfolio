@@ -11,6 +11,7 @@ import Contact from './Content/Contact';
 
 // styled stuffs
 import * as A from "./_styled/App.styled";
+import Landing from './Content/Landing';
 
 export const DarkModeContext = React.createContext(null);
 
@@ -25,6 +26,9 @@ function App() {
         <a name="top"></a>
         <Header setDarkMode={setDarkMode}/>
         <main role="main">
+          <div>
+            <Landing />
+          </div>
           <div id="about">
             <About />
           </div>
