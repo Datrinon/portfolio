@@ -33,17 +33,17 @@ function About() {
           <A.AboutMeFact className="fact-2" ms={1500}>
             React.JS Enthusiast</A.AboutMeFact>
           <A.AboutMeFact className="fact-3" ms={3400}>
-            Team Man</A.AboutMeFact>
+            a Team Man</A.AboutMeFact>
         </A.AboutMeFacts>
       </A.AboutHeader>
-      <div className="bio">
+      <A.Bio className="bio">
         <p className="bio-text">
           {bioText}
         </p>
-        <p>
+        <p className="bio-footer">
           Please scroll below to see some of the projects that I've accomplished. Thanks for visiting my website!
         </p>
-      </div>
+      </A.Bio>
     </A.AboutContainer>
   )
 }
