@@ -23,10 +23,7 @@ function About() {
   return (
     <A.AboutContainer>
       <A.ProfilePic className="profile-pic-container">
-        <img
-          className="profile-pic"
-          src={placeholder}
-          alt={"A portrait photograph of Dan."} />
+
         <A.AboutMe>
           <A.AboutMeFact className="fact-1" ms={500}>
             Recent Grad</A.AboutMeFact>
