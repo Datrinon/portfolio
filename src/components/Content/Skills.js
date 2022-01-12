@@ -18,10 +18,10 @@ function Skills() {
                 <ul className="skills-list">
                   {list.skills.map((skill, index) => {
                     return (
-                      <li key={index} className="skill-bullet">
-                        <skill.icon color={skill.color} />
+                      <A.SkillBullet key={index} className="skill-bullet">
+                        <skill.icon color={skill.color} className="skill-icon" />
                         <span>{skill.name}</span>
-                      </li>
+                      </A.SkillBullet>
                     )
                   })}
                 </ul>
