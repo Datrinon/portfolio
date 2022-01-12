@@ -55,7 +55,7 @@ const ICON_DIC = {
   bash: {
     name: "BASH / Unix",
     icon: VscTerminalBash,
-    color: "rgb(45,9,32)"
+    color: "rgb(204,0,102)"
   },
   regex: {
     name: "Regex",

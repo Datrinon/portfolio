@@ -3,7 +3,6 @@ import * as L from "./styled/Landing.styled";
 import placeholder from "../../data/placeholder2.jpg"
 import { BsChevronDoubleDown } from "react-icons/bs"
 
-
 function Landing() {
   return (
     <L.Landing>

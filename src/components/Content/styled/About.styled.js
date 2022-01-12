@@ -5,7 +5,7 @@ import { HEADING_SIZE } from '../../_styled/sizes.styled';
 
 export const AboutContainer = styled.div`
   max-width: 800px;
-  margin: 2em auto;
+  margin: -3em auto;
 
   & > * {
     margin: 0.5em auto;

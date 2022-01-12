@@ -13,6 +13,10 @@ import Contact from './Content/Contact';
 import * as A from "./_styled/App.styled";
 import Landing from './Content/Landing';
 
+// svg stuffs
+import triangle from "../data/decals/triangle.svg"
+
+
 export const DarkModeContext = React.createContext(null);
 
 function App() {
@@ -28,9 +32,13 @@ function App() {
         <main role="main">
           <div>
             <Landing />
+            <img src={triangle} alt="a triangle graphic."/>
           </div>
           <div id="about">
             <About />
+            <img
+              style={{transform: "rotate(180deg)"}}
+              src={triangle} alt="a triangle graphic."/>
           </div>
           <div id="skills">
             <Skills />
