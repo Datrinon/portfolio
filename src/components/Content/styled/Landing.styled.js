@@ -22,6 +22,14 @@ export const Landing = styled.div`
     height: 100%;
     box-shadow: inset 0 0 150px black;
   }
+
+  & .vertical-shadow {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(357deg, black, transparent);
+  }
 `
 
 export const LandingCaption = styled.div`

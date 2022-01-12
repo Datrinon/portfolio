@@ -13,6 +13,9 @@ function Landing() {
       <div className="vignette">
 
       </div>
+      <div className="vertical-shadow">
+        
+      </div>
       <L.LandingCaption>
         <p className="heading">
           Hello! I'm Dan.

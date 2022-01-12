@@ -14,6 +14,7 @@ import * as A from "./_styled/App.styled";
 import Landing from './Content/Landing';
 
 // svg stuffs
+import {ReactSVG} from "react-svg";
 import triangle from "../data/decals/triangle.svg"
 
 
@@ -32,11 +33,11 @@ function App() {
         <main role="main">
           <div>
             <Landing />
-            <img src={triangle} alt="a triangle graphic."/>
+            <A.AboutUpperTriangle src={triangle} alt="a triangle graphic."/>
           </div>
           <div id="about">
             <About />
-            <img
+            <ReactSVG
               style={{transform: "rotate(180deg)"}}
               src={triangle} alt="a triangle graphic."/>
           </div>
