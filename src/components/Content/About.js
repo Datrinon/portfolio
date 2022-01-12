@@ -22,25 +22,19 @@ function About() {
 
   return (
     <A.AboutContainer>
-      <A.ProfilePic className="profile-pic-container">
-
-        <A.AboutMe>
-          <A.AboutMeFact className="fact-1" ms={500}>
-            Recent Grad</A.AboutMeFact>
-          <A.AboutMeFact className="fact-2" ms={1500}>
-            Aspiring Web Dev</A.AboutMeFact>
-          <A.AboutMeFact className="fact-3" ms={2800}>
-            React.JS Enthusiast</A.AboutMeFact>
-          <A.AboutMeFact className="fact-4" ms={3400}>
-            Team Man</A.AboutMeFact>
-        </A.AboutMe>
-      </A.ProfilePic>
       <A.AboutHeader>
         <A.AboutHeading
           className="section-title">
-          Hello! I'm Dan.
+          Who am I?
         </A.AboutHeading>
-
+        <A.AboutMeFacts>
+          <A.AboutMeFact className="fact-1" ms={500}>
+            Recent Grad</A.AboutMeFact>
+          <A.AboutMeFact className="fact-2" ms={1500}>
+            React.JS Enthusiast</A.AboutMeFact>
+          <A.AboutMeFact className="fact-3" ms={3400}>
+            Team Man</A.AboutMeFact>
+        </A.AboutMeFacts>
       </A.AboutHeader>
       <div className="bio">
         <p className="bio-text">

@@ -83,13 +83,27 @@ export const AboutMe = styled.ul`
   }
 `
 
+export const AboutMeFacts = styled.ul`
+  li:not(:last-child)::after  {
+    content: ", ";
+  }
+
+  li:last-child::before {
+    content: " and ";
+  }
+
+`
+
 export const AboutMeFact = styled.li`
+    display: inline;
     animation: ${appear} ${props => props.ms ? `${props.ms}ms` : "300ms"};
 
     @media ${device.mobileL} {
       width: fit-content;
     }
-  }
+
+    &::after {
+    }
 `
 
 export const ProfilePic = styled.div`
