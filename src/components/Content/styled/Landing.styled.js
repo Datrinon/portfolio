@@ -28,7 +28,7 @@ export const Landing = styled.div`
     height: 50%;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(357deg, black, transparent);
+    background: linear-gradient(0deg, black, transparent);
   }
 `
 

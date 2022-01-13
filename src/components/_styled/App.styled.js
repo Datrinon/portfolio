@@ -10,5 +10,5 @@ export const Page = styled.div`
 
 export const AboutUpperTriangle = styled(ReactSVG)`
   position:relative;
-  bottom: 3px;
+  bottom: 1px;
 `
