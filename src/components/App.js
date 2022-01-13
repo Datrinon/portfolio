@@ -16,6 +16,8 @@ import Landing from './Content/Landing';
 // svg stuffs
 import {ReactSVG} from "react-svg";
 import triangle from "../data/decals/triangle.svg"
+import triangle2 from "../data/decals/triangle2.svg"
+
 
 
 export const DarkModeContext = React.createContext(null);
@@ -37,9 +39,9 @@ function App() {
           </div>
           <div id="about">
             <About />
-            <ReactSVG
+            {/* <ReactSVG
               style={{transform: "rotate(180deg)"}}
-              src={triangle} alt="a triangle graphic."/>
+              src={triangle} alt="a triangle graphic."/> */}
           </div>
           <div id="skills">
             <Skills />
