@@ -1,13 +1,15 @@
 import React from 'react'
 
+import * as P from "./styled/Projects.styled";
+
 function ProjectListing({project, featured=false}) {
 
   return (
-    <div className={featured ? "featured" : "standard"}>
+    <P.Project className={`project ${featured ? "featured" : "standard"}`}>
       <div className="image">
-        <img width={20} src={project.photo} alt={`A screenshot from the primary view of the app ${project.name}.`}/>
+        <img width={30} src={project.photo} alt={`A screenshot from the primary view of the app ${project.name}.`}/>
       </div>
-      <div>
+      <div className="desc">
         <h3>{project.name}</h3>
         <p>{project.desc}</p>
         <p>{project.finishDate}</p>
@@ -24,7 +26,7 @@ function ProjectListing({project, featured=false}) {
         <a href={project.repo} target="_blank" rel="noreferrer">View Repo</a>
         <a href={project.demo} target="_blank" rel="noreferrer">View Demo</a>
       </div>
-    </div>
+    </P.Project>
   )
 }
 

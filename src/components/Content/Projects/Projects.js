@@ -1,40 +1,46 @@
 import React from 'react'
 import { FEATURED_PROJECTS, ODIN_PROJECTS } from '../../../data/projects'
 import Section from '../Section'
-import ProjectListing from './Project'
+import ProjectListing from './ProjectListing'
+
+import * as P from './styled/Projects.styled'
 
 function Projects() {
 
   return (
-    <Section title={"Projects"}>
-      <div className="featured">
-        <h3>Featured</h3>
-        <p>The best of my recent projects.</p>
-        <ul>
-          {
-            FEATURED_PROJECTS.map((project, index) => (
-              <li key={index}>
-                <ProjectListing project={project} featured={true}/>
-              </li>
+    <P.ProjectsContainer>
+      <Section title={"Projects"}>
+        <div className="featured project-category">
+          <h3 className="title">Featured</h3>
+          <p className="subtitle">The more notable entries of my recent works.</p>
+          <P.FeaturedProjectListingContainer>
+            {
+              FEATURED_PROJECTS.map((project, index) => (
+                <li key={index} className="listing-container">
+                  <ProjectListing
+                    project={project}
+                    featured={true} />
+                </li>
               )
-            )
-          }
-        </ul> 
-      </div>
-      <div className="standard-reel">
-        <h3>Odin Project Series</h3>
-        <p>Projects I built during whilst learning with Odin.</p>
-        <ul>
-          {
-            ODIN_PROJECTS.map((project, index) => (
-              <li key={index}>
-                <ProjectListing project={project} featured={false}/>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-    </Section>
+              )
+            }
+          </P.FeaturedProjectListingContainer>
+        </div>
+        <div className="standard-reel project-category">
+          <h3 className="title">Odin Project Series</h3>
+          <p className="subtitle">Projects I built during whilst learning with Odin.</p>
+          <ul>
+            {
+              ODIN_PROJECTS.map((project, index) => (
+                <li key={index}>
+                  <ProjectListing project={project} featured={false} />
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </Section>
+    </P.ProjectsContainer>
   )
 }
 
