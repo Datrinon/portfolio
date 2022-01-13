@@ -17,7 +17,7 @@ import Roshambo from "./photos/roshambo.jpg"
 export const FEATURED_PROJECTS = [
   {
     name: "Roadtrypper",
-    desc: "A travel journal application. Plan your trips here and record your memories. This project took 2 months.",
+    desc: "An online travel journal application. Plan your trips here or record your memories with a live map. This project was completed over a 2 month duration (45 days).",
     builtWith: [
       ICON_DIC.react,
       ICON_DIC.firebase,
@@ -26,7 +26,7 @@ export const FEATURED_PROJECTS = [
     finishDate: "Jan. 2022",
     photo: RoadTrypper,
     repo: "https://github.com/Datrinon/roadtrypper",
-    demo: "https://roadtrypper.web.app/#/login"
+    demo: "https://roadtrypper.web.app/"
   },
   {
     name: "E-Commerce Shopping Cart",
