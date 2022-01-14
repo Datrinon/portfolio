@@ -9,6 +9,8 @@ export const ProjectsContainer = styled.div`
   }
 
   & .project-category .title {
+    margin-top: 1em;
+    font-weight: bold;
     font-size: ${HEADING_SIZE.LV3};
     text-align: center;
   }
@@ -102,18 +104,6 @@ export const FeaturedProjectListingContainer = styled.ul`
 `
 
 
-/**
- * Create two project components
- * Use mixins for them.
- */
-const featuredProject = css`
-
-  & .image {
-    /* width: 780px;
-    height: 488px; */
-  }
-`
-
 const featuredProjectDesc = css`
   margin-top: 0.5em;
 
@@ -155,11 +145,31 @@ const featuredProjectDesc = css`
   } 
 `
 
+export const StandardProjectListingContainer = styled.ul`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+`
+
+const standardProject = css`
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 300px;
+
+  & .image {
+    width: 30px;
+  }
+`;
+
 export const Project = styled.div`
-  &.project.featured {
-    ${featuredProject}
+  /* CSS for project in standard reel are just cards. */
+  &.project.standard {
+    ${standardProject}
   }
 
+  /* No special CSS needed for featured projects, except its desc. */
   &.project.featured .desc {
     ${featuredProjectDesc}
   }

@@ -29,7 +29,7 @@ function Projects() {
         <div className="standard-reel project-category">
           <h3 className="title">Odin Project Series</h3>
           <p className="subtitle">Projects I built during whilst learning with Odin.</p>
-          <ul>
+          <P.StandardProjectListingContainer>
             {
               ODIN_PROJECTS.map((project, index) => (
                 <li key={index}>
@@ -37,7 +37,7 @@ function Projects() {
                 </li>
               ))
             }
-          </ul>
+          </P.StandardProjectListingContainer>
         </div>
       </Section>
     </P.ProjectsContainer>
