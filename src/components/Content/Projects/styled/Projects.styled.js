@@ -28,12 +28,11 @@ export const ProjectsContainer = styled.div`
 `
 
 
-/**
- * Use this to alternate the presentation of the items using nth child.
- */
+
 export const FeaturedProjectListingContainer = styled.ul`
   & .listing-container {
     max-width: 1000px;
+    width: 80vw;
 
     margin: 0.5em auto;
   }
@@ -57,7 +56,9 @@ export const FeaturedProjectListingContainer = styled.ul`
     border-radius: 5px;
   }
 
-
+  /**
+  * Use this to alternate the presentation of the items using nth child.
+  */
   @media ${device.laptop} {
     & .listing-container {
       height: 40vh;
@@ -105,17 +106,28 @@ export const FeaturedProjectListingContainer = styled.ul`
 
 
 const featuredProjectDesc = css`
-  margin-top: 0.5em;
+  margin-top: 1em;
 
   & .project-title-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "icon title"
+    "icon date";
+    grid-template-columns: 4rem auto;
+    column-gap: 1em;
 
     & .icon {
-      height: 3em;
+      grid-area: icon;
+      width: 100%;
+      align-self: center;
     }
 
     & .project-title {
-      align-self: center;
+      grid-area: title;
+    }
+
+    & .project-finish-date {
+      grid-area: date;
     }
   }
 
@@ -148,7 +160,10 @@ const featuredProjectDesc = css`
 export const StandardProjectListingContainer = styled.ul`
   display: flex;
   flex-direction: row;
-  width: 100%;
+  justify-content: center;
+  width: 80vw;
+  max-width: 1250px;
+  margin: 0 auto;
   flex-wrap: wrap;
 `
 
@@ -157,6 +172,7 @@ const standardProject = css`
   flex-direction: column;
   border: 1px solid red;
   width: 300px;
+  margin: 0 25px;
 
   & .image {
     width: 30px;
@@ -185,6 +201,8 @@ export const ProjectSkill = styled.li`
   font-size: 90%;
   flex: 0 0 auto;
   margin: 0.25em 0.5em;
+  width: fit-content;
+  display: inline-block;
 
   & .skill-icon {
     position: relative;

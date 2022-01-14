@@ -21,8 +21,8 @@ function ProjectListing({project, featured=false}) {
               alt={`${project.name}'s icon.`}/>
           }
           <h3 className="project-title">{project.name}</h3>
+          <p className="project-finish-date">Completed {project.finishDate}</p>
         </div>
-        <p className="project-finish-date">Completed {project.finishDate}</p>
         <p className="project-desc">{project.desc}</p>
         <P.ProjectStack className="project-stack">
           {

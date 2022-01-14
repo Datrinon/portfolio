@@ -27,7 +27,7 @@ function Projects() {
           </P.FeaturedProjectListingContainer>
         </div>
         <div className="standard-reel project-category">
-          <h3 className="title">Odin Project Series</h3>
+          <h3 className="title">Odin Project: Front-end Projects</h3>
           <p className="subtitle">Projects I built during whilst learning with Odin.</p>
           <P.StandardProjectListingContainer>
             {
