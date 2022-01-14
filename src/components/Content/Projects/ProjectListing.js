@@ -13,7 +13,15 @@ function ProjectListing({project, featured=false}) {
         <img className="image" src={project.photo} alt={`A screenshot from the primary view of the app ${project.name}.`}/>
       </div>
       <div className="desc">
-        <h3 className="project-title">{project.name}</h3>
+        <div className="project-title-wrapper">
+          {
+            project.icon &&
+            <img className="icon"
+              src={project.icon}
+              alt={`${project.name}'s icon.`}/>
+          }
+          <h3 className="project-title">{project.name}</h3>
+        </div>
         <p className="project-finish-date">Completed {project.finishDate}</p>
         <p className="project-desc">{project.desc}</p>
         <P.ProjectStack className="project-stack">
@@ -21,7 +29,7 @@ function ProjectListing({project, featured=false}) {
             project.builtWith.map((skill, index) => {
               // get only the r, g, b values
               let colors = skill.color.substring(4, skill.color.length - 1).split(",");
-              colors = colors.map(color => parseInt(color * 0.25));
+              colors = colors.map(color => parseInt(color * 0.45));
 
               const bg = `rgba(${colors[0]}, ${colors[1]}, ${colors[2]}, 0.75)`;
 

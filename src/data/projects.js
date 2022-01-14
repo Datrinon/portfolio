@@ -14,10 +14,17 @@ import TicTacToe from "./photos/tictactoe.jpg"
 import PixelPainter from "./photos/painter.jpg"
 import Roshambo from "./photos/roshambo.jpg"
 
+// logo imports
+import RTLogo from "./photos/logos/roadtrypper-logo.jpg";
+import MBLogo from "./photos/logos/mako-logo.jpg";
+import BSLogo from "./photos/logos/battleship-logo.jpg";
+
+
 export const FEATURED_PROJECTS = [
   {
     name: "Roadtrypper",
     desc: "An online travel journal application. Plan your trips here or record your memories with a live map. This project was completed over a 2 month duration (45 days).",
+    icon: RTLogo,
     builtWith: [
       ICON_DIC.react,
       ICON_DIC.firebase,
@@ -31,6 +38,7 @@ export const FEATURED_PROJECTS = [
   {
     name: "E-Commerce Shopping Cart",
     desc: "A mock-up of an electric bikes storefront with a working shopping cart. Uses React Router.",
+    icon: MBLogo,
     builtWith: [
       ICON_DIC.react,
       ICON_DIC.js
@@ -43,6 +51,7 @@ export const FEATURED_PROJECTS = [
   {
     name: "Battleships",
     desc: "Play the classic game of battleships! Features a competent AI that does more than blindly guess.",
+    icon: BSLogo,
     builtWith: [
       ICON_DIC.js,
       ICON_DIC.html5,

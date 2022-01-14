@@ -33,6 +33,7 @@ export const FeaturedProjectListingContainer = styled.ul`
   & .listing-container {
     max-width: 1000px;
     height: 40vh;
+    max-height: 400px;
     margin: 0.5em auto;
   }
 
@@ -112,6 +113,18 @@ const featuredProject = css`
 const featuredProjectDesc = css`
   margin-top: 0.5em;
 
+  & .project-title-wrapper {
+    display: flex;
+
+    & .icon {
+      height: 3em;
+    }
+
+    & .project-title {
+      align-self: center;
+    }
+  }
+
   & .project-title {
     font-size: ${HEADING_SIZE.LV3};
     font-weight: 500;
@@ -150,7 +163,8 @@ export const Project = styled.div`
 
 export const ProjectSkill = styled.li`
   background-color: ${props => props.bg ?? "rgba(78,78,78, 0.8)"} ;
-  color: rgb(225, 225, 225);
+  /* color: rgb(225, 225, 225); */
+  color: beige;
   padding: 3px;
   border-radius: 5px;
   font-weight: 500;
