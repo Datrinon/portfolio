@@ -32,8 +32,7 @@ export const ProjectsContainer = styled.div`
 export const FeaturedProjectListingContainer = styled.ul`
   & .listing-container {
     max-width: 1000px;
-    height: 40vh;
-    max-height: 400px;
+
     margin: 0.5em auto;
   }
 
@@ -58,6 +57,11 @@ export const FeaturedProjectListingContainer = styled.ul`
 
 
   @media ${device.laptop} {
+    & .listing-container {
+      height: 40vh;
+      max-height: 400px;
+    }
+    
     /* Move this to only apply when the size is greater than 1024px. */
     /* In lower-width viewports, we see a vertically presented project list. */
     & .listing-container .project {
@@ -189,8 +193,15 @@ export const ProjectStack = styled.ul`
     content: "Built with";
     font-variant-caps: all-petite-caps;
     top: -1em;
-    left: 5px;
+    left: 50%;
+    transform: translateX(-50%);
     text-decoration: underline;
+
+
+    @media ${device.laptop} {
+      left: 5px;
+      transform: initial;
+    }
   }
 `;
 
