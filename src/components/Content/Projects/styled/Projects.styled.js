@@ -168,11 +168,25 @@ export const ProjectSkill = styled.li`
   }
 `
 
+export const ProjectStack = styled.ul`
+  position: relative;
+  margin-top: 2em;
+
+  &::before {
+    position: absolute;
+    content: "Built with";
+    font-variant-caps: all-petite-caps;
+    top: -1em;
+    left: 5px;
+    text-decoration: underline;
+  }
+`;
+
 export const ProjectLink = styled.a`
   display: block;
   cursor: pointer;
-  background-color: rgba(78,78,78, 0.8);
-  color: white;
+  background-color: rgb(255 180 68 / 80%);
+  color: black;
   padding: 3px 0.5em;
   border-radius: 5px;
   width: 120px;
@@ -180,16 +194,16 @@ export const ProjectLink = styled.a`
   text-decoration: none;
   text-align: center;
   display: flex;
-  font-weight: bold;
+  font-weight: 400;
 
   & .icon {
     font-size: 1.5rem;
-    color: white;
+    color: inherit;
   }
 
   & .text {
     align-self: center;
     margin-left: 5px;
-    color: white;
+    color: inherit;
   }
 `

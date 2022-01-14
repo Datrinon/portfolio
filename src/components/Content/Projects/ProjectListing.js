@@ -16,12 +16,12 @@ function ProjectListing({project, featured=false}) {
         <h3 className="project-title">{project.name}</h3>
         <p className="project-finish-date">Completed {project.finishDate}</p>
         <p className="project-desc">{project.desc}</p>
-        <ul className="project-stack">
+        <P.ProjectStack className="project-stack">
           {
             project.builtWith.map((skill, index) => {
               // get only the r, g, b values
               let colors = skill.color.substring(4, skill.color.length - 1).split(",");
-              colors = colors.map(color => parseInt(color * 0.35));
+              colors = colors.map(color => parseInt(color * 0.25));
 
               const bg = `rgba(${colors[0]}, ${colors[1]}, ${colors[2]}, 0.75)`;
 
@@ -31,7 +31,7 @@ function ProjectListing({project, featured=false}) {
               </P.ProjectSkill>)
             })
           }
-        </ul>
+        </P.ProjectStack>
         <P.ProjectLink href={project.repo} target="_blank" rel="noreferrer">
           <RiCodeSSlashLine className="icon"/>
           <span className="text">View Repo</span>
