@@ -152,7 +152,7 @@ export const Project = styled.div`
 
 export const ProjectSkill = styled.li`
   background-color: ${props => props.bg ?? "rgba(78,78,78, 0.8)"} ;
-  color: white;
+  color: rgb(225, 225, 225);
   padding: 3px;
   border-radius: 5px;
   font-weight: 500;
@@ -165,5 +165,31 @@ export const ProjectSkill = styled.li`
     font-size: 1rem;
     top: 2px;
     right: 1px;
+  }
+`
+
+export const ProjectLink = styled.a`
+  display: block;
+  cursor: pointer;
+  background-color: rgba(78,78,78, 0.8);
+  color: white;
+  padding: 3px 0.5em;
+  border-radius: 5px;
+  width: 120px;
+  margin: 0.5em auto;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  font-weight: bold;
+
+  & .icon {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  & .text {
+    align-self: center;
+    margin-left: 5px;
+    color: white;
   }
 `

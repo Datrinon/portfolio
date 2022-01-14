@@ -2,6 +2,9 @@ import React from 'react'
 
 import * as P from "./styled/Projects.styled";
 
+import { FiCode, FiMonitor } from 'react-icons/fi';
+import { RiCodeSSlashLine } from 'react-icons/ri';
+
 function ProjectListing({project, featured=false}) {
 
   return (
@@ -29,8 +32,16 @@ function ProjectListing({project, featured=false}) {
             })
           }
         </ul>
-        <a href={project.repo} target="_blank" rel="noreferrer">View Repo</a>
-        <a href={project.demo} target="_blank" rel="noreferrer">View Demo</a>
+        <P.ProjectLink href={project.repo} target="_blank" rel="noreferrer">
+          <RiCodeSSlashLine className="icon"/>
+          <span className="text">View Repo</span>
+        </P.ProjectLink>
+        <P.ProjectLink href={project.demo} target="_blank" rel="noreferrer">
+          <FiMonitor className="icon"/>
+          <span className="text">
+          View Demo
+            </span>
+        </P.ProjectLink>
       </div>
     </P.Project>
   )
