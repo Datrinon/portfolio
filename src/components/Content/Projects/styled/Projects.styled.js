@@ -21,7 +21,7 @@ export const ProjectsContainer = styled.div`
   }
 
   & .featured.project-category {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 `
 
@@ -31,10 +31,9 @@ export const ProjectsContainer = styled.div`
  */
 export const FeaturedProjectListingContainer = styled.ul`
   & .listing-container {
-    width: 66vw;
     max-width: 1000px;
+    height: 40vh;
     margin: 0.5em auto;
-    border: 1px solid red;
   }
 
   /* The default view for this is portrait mode */
@@ -45,16 +44,21 @@ export const FeaturedProjectListingContainer = styled.ul`
   }
 
   & .project .image-wrapper {
-    margin: 0 auto;
+    align-self: center;
   }
 
   & .project .image {
     width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 50%);
+    border-radius: 5px;
   }
 
 
   @media ${device.laptop} {
     /* Move this to only apply when the size is greater than 1024px. */
+    /* In lower-width viewports, we see a vertically presented project list. */
     & .listing-container .project {
       display: grid;
       grid-template-areas: "pic desc";
@@ -73,7 +77,6 @@ export const FeaturedProjectListingContainer = styled.ul`
     & .project .image-wrapper {
       grid-area: pic;
       width: 80%;
-      height: 95%;
       justify-self: start;
     }
 
@@ -82,12 +85,7 @@ export const FeaturedProjectListingContainer = styled.ul`
     }
 
     & .project .image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      box-shadow: 0px 5px 15px rgb(0 0 0 / 50%);
-      border: 1px solid black;
-      border-radius: 5px;
+
     }
 
     & .project .desc {
