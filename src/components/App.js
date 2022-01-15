@@ -18,7 +18,7 @@ import {ReactSVG} from "react-svg";
 import triangle from "../data/decals/triangle.svg"
 import triangle2 from "../data/decals/triangle2.svg"
 
-
+import {BsArrowBarUp} from "react-icons/bs";
 
 export const DarkModeContext = React.createContext(null);
 
@@ -37,26 +37,28 @@ function App() {
             <Landing />
             <A.AboutUpperTriangle src={triangle} alt="a triangle graphic."/>
           </div>
-          <div id="about">
+          <div id="about" className="page-section">
             <About />
             {/* <ReactSVG
               style={{transform: "rotate(180deg)"}}
               src={triangle} alt="a triangle graphic."/> */}
           </div>
-          <div id="skills">
+          <div id="skills" className="page-section">
             <Skills />
           </div>
-          <div id="projects">
+          <div id="projects" className="page-section">
             <Projects />
           </div>
-          <div id="resume">
+          <div id="resume" className="page-section">
             <Resume />
           </div>
         </main>
-        <footer id="contact">
+        <footer id="contact" className="page-section">
           <Contact />
         </footer>
-        <a href="#top">Top</a>
+        <A.FloatingReturnButton href="#top">
+          <BsArrowBarUp/>
+        </A.FloatingReturnButton>
       </A.Page>
     </DarkModeContext.Provider>
   );
