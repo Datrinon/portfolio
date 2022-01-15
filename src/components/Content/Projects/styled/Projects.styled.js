@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components'
 import { device } from '../../../_styled/breakpoints.styled'
 import { HEADING_SIZE } from '../../../_styled/sizes.styled'
 
+const boxShadow = "0px 5px 15px rgb(0 0 0 / 50%)";
+
 export const ProjectsContainer = styled.div`
   & .section-title {
     font-size: ${HEADING_SIZE.LV2};
@@ -52,7 +54,7 @@ export const FeaturedProjectListingContainer = styled.ul`
     width: 100%;
     height: auto;
     object-fit: contain;
-    box-shadow: 0px 5px 15px rgb(0 0 0 / 50%);
+    box-shadow: ${boxShadow};
     border-radius: 5px;
   }
 
@@ -120,6 +122,7 @@ const featuredProjectDesc = css`
       grid-area: icon;
       width: 100%;
       align-self: center;
+      border-radius: 5px;
     }
 
     & .project-title {
@@ -170,12 +173,90 @@ export const StandardProjectListingContainer = styled.ul`
 const standardProject = css`
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   width: 300px;
-  margin: 0 25px;
+  height: 450px;
+  margin: 15px 25px;
+  border-radius: 5px;
+  box-shadow: ${boxShadow};
+  position: relative;
 
   & .image {
-    width: 30px;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+
+  & .project-title {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 0.5em;
+  }
+
+  & .project-finish-date {
+    text-align: center;
+    padding: 0.5em 0;
+  }
+
+  & .project-desc {
+    margin: 0.5em auto;
+    text-align: justify;
+    width: 90%;
+  }
+
+  & .actions {
+    display: flex;
+    flex-direction: row;
+  }
+
+  & .project-stack {
+    text-align: center;
+  }
+
+  & .project-stack::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  & .project-stack .skill {
+    background-color: transparent;
+  }
+
+  & .project-stack .skill .skill-icon {
+    font-size: 2em;
+
+  }
+
+  & .skill-name {
+    display: none;
+  }
+
+  & .actions {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  & .action {
+    margin: 0;
+    width: 50%;
+    padding: 0.25em 0;
+    text-align: center;
+    border-radius: 0;
+    justify-content: center;
+  }
+
+  & .image {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  & .action.repo {
+    border-bottom-left-radius: 8px;
+  }
+
+  & .action.demo {
+    border-bottom-right-radius: 8px;
   }
 `;
 

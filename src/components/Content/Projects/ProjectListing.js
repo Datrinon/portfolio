@@ -40,16 +40,26 @@ function ProjectListing({project, featured=false}) {
             })
           }
         </P.ProjectStack>
-        <P.ProjectLink href={project.repo} target="_blank" rel="noreferrer">
-          <RiCodeSSlashLine className="icon"/>
-          <span className="text">View Repo</span>
-        </P.ProjectLink>
-        <P.ProjectLink href={project.demo} target="_blank" rel="noreferrer">
-          <FiMonitor className="icon"/>
-          <span className="text">
-          View Demo
-            </span>
-        </P.ProjectLink>
+        <div className="actions">
+          <P.ProjectLink
+            className="repo action"
+            href={project.repo}
+            target="_blank"
+            rel="noreferrer">
+            <RiCodeSSlashLine className="icon"/>
+            <span className="text">View Repo</span>
+          </P.ProjectLink>
+          <P.ProjectLink
+            className="demo action"            
+            href={project.demo}
+            target="_blank"
+            rel="noreferrer">
+            <FiMonitor className="icon"/>
+            <span className="text">
+            View Demo
+              </span>
+          </P.ProjectLink>
+        </div>
       </div>
     </P.Project>
   )

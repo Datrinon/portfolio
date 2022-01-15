@@ -28,7 +28,7 @@ function Projects() {
         </div>
         <div className="standard-reel project-category">
           <h3 className="title">Odin Project: Front-end Projects</h3>
-          <p className="subtitle">Projects I built during whilst learning with Odin.</p>
+          <p className="subtitle">Projects I built during whilst learning through <a href="https://www.theodinproject.com/about" target="_blank" rel="noreferrer">the Odin Project</a>.</p>
           <P.StandardProjectListingContainer>
             {
               ODIN_PROJECTS.map((project, index) => (

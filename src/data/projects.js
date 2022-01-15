@@ -17,7 +17,7 @@ import Roshambo from "./photos/roshambo.jpg"
 // logo imports
 import RTLogo from "./photos/logos/roadtrypper-logo.jpg";
 import MBLogo from "./photos/logos/mako-logo.jpg";
-import BSLogo from "./photos/logos/battleship-logo.jpg";
+import BSLogo from "./photos/logos/battleship-logo.png";
 
 
 export const FEATURED_PROJECTS = [
@@ -68,7 +68,7 @@ export const FEATURED_PROJECTS = [
 export const ODIN_PROJECTS = [
   {
     name: "Memory Cards",
-    desc: "A game of memory cards with fetches data from a food API.",
+    desc: "A game of memory cards that fetches data from a food API.",
     builtWith: [
       ICON_DIC.react
     ],
