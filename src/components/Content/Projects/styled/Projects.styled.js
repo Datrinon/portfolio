@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { appear } from '../../../_styled/anim.styled';
 import { device } from '../../../_styled/breakpoints.styled'
 import { HEADING_SIZE } from '../../../_styled/sizes.styled'
 
@@ -170,13 +171,14 @@ export const StandardProjectListingContainer = styled.ul`
   flex-wrap: wrap;
 `
 
+
 const standardProject = css`
   display: flex;
   flex-direction: column;
   width: 300px;
   height: 450px;
   margin: 15px 25px;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: ${boxShadow};
   position: relative;
 
@@ -196,6 +198,9 @@ const standardProject = css`
   & .project-finish-date {
     text-align: center;
     padding: 0.5em 0;
+    font-size: 0.8em;
+    color: rgba(178 178 178 0.8);
+    font-style: italic;
   }
 
   & .project-desc {
@@ -220,6 +225,20 @@ const standardProject = css`
 
   & .project-stack .skill {
     background-color: transparent;
+    position: relative;
+
+    &:hover::after {
+      left: 0;
+      bottom: -50%;
+      position: absolute;
+      content: attr(data-caption);
+      color: white;
+      background-color: rgba(34 34 34 / 0.8);
+      padding: 0.5em;
+      border-radius: 5px;
+      z-index: 10;
+      animation: ${appear} 300ms;
+    }
   }
 
   & .project-stack .skill .skill-icon {
@@ -235,6 +254,16 @@ const standardProject = css`
     position: absolute;
     bottom: 0;
     width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 70%;
+      border-right: 1px solid rgba(0,0,0, 0.5);
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   & .action {
@@ -252,6 +281,7 @@ const standardProject = css`
   }
 
   & .action.repo {
+    position: relative;
     border-bottom-left-radius: 8px;
   }
 

@@ -33,7 +33,12 @@ function ProjectListing({project, featured=false}) {
 
               const bg = `rgba(${colors[0]}, ${colors[1]}, ${colors[2]}, 0.75)`;
 
-              return (<P.ProjectSkill key={index} className="skill" bg={bg}>
+              return (
+              <P.ProjectSkill
+                key={index}
+                className="skill"
+                data-caption={skill.name}
+                bg={bg}>
                 <skill.icon className="skill-icon" color={skill.color}/>
                 <span className="skill-name">{skill.name}</span>
               </P.ProjectSkill>)
