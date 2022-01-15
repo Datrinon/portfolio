@@ -1,14 +1,21 @@
 import React from 'react'
 import Section from './Section'
 
-import resumePdf from "../../data/resume-DanTrinh.pdf"
+import resumePdf from "../../data/resume-DanTrinh.pdf#zoom=50"
+
+import * as R from "./styled/Resume.styled";
 
 function Resume() {
   return (
-    <Section title={"Resume"}>
-      <iframe title="Resume View" src={resumePdf} width="80%" height="30px">
-      </iframe>
-    </Section>
+    <R.ResumeContainer>
+      <Section title={"Resume"}>
+        <R.ResumeIFrame
+          title="Resume View"
+          src={resumePdf}
+          className="resume">
+        </R.ResumeIFrame>
+      </Section>
+    </R.ResumeContainer>
   )
 }
 
