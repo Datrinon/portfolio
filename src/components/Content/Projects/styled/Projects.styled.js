@@ -19,6 +19,7 @@ export const ProjectsContainer = styled.div`
   }
 
   & .project-category .subtitle {
+    margin: 0.5em 0;
     text-align: center;
   }
 
@@ -165,8 +166,8 @@ export const StandardProjectListingContainer = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 80vw;
-  max-width: 1250px;
+  width: 90vw;
+  max-width: 1400px;
   margin: 0 auto;
   flex-wrap: wrap;
 `
@@ -176,8 +177,8 @@ const standardProject = css`
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 450px;
-  margin: 15px 25px;
+  height: auto;
+  margin: 2em 2.5em;
   border-radius: 8px;
   box-shadow: ${boxShadow};
   position: relative;
@@ -207,6 +208,7 @@ const standardProject = css`
     margin: 0.5em auto;
     text-align: justify;
     width: 90%;
+    height: 70px;
   }
 
   & .actions {
@@ -229,7 +231,7 @@ const standardProject = css`
 
     &:hover::after {
       left: 0;
-      bottom: -50%;
+      top: -50%;
       position: absolute;
       content: attr(data-caption);
       color: white;
@@ -251,7 +253,7 @@ const standardProject = css`
   }
 
   & .actions {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 
