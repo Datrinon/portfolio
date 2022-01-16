@@ -30,21 +30,30 @@ function App() {
   const [ contactsVisible, setContactsVisible ] = useState(true);
   const [ topAnchorVisible, setTopAnchorVisible ] = useState(false);
   // IO code here.
-  const floatingContacts = useRef(null);
-  const floatingReturn = useRef(null);
+  const footerRef = useRef(null);
   const landingRef = useRef(null);
-  const intersectionObserver = useRef(null);
+  const topAnchorIntersectionObserver = useRef(null);
+  const contactsIntersectionObserver = useRef(null);
 
   useEffect(() => {
     // set up intersection observers to watch if we get to element of "about me"
     // then show the arrow bar up thing.
     const onLandingIntersect = (entries) => {
       entries.forEach(entry => {
-        console.log(entry);
         if (entry.isIntersecting) {
           setTopAnchorVisible(false);
         } else {
           setTopAnchorVisible(true);
+        }
+      });
+    }
+
+    const onFooterIntersect = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setContactsVisible(false);
+        } else {
+          setContactsVisible(true);
         }
       });
     }
@@ -55,23 +64,31 @@ function App() {
      * Safety bounds of 1em
      * At a threshold of 0.2 past the bounds, invoke the observer's callback.
      */
-    const aboutObserverOptions = {
+    const observerOptions = {
       root: null,
       rootMargin: '0px',
       threshold: 0.5
     };
 
-    intersectionObserver.current = new IntersectionObserver(onLandingIntersect, aboutObserverOptions);
+    topAnchorIntersectionObserver.current =
+        new IntersectionObserver(onLandingIntersect, observerOptions);
 
-    intersectionObserver.current.observe(landingRef.current);
+    contactsIntersectionObserver.current =
+        new IntersectionObserver(onFooterIntersect, observerOptions);
 
+    topAnchorIntersectionObserver.current.observe(landingRef.current);
+    contactsIntersectionObserver.current.observe(footerRef.current);
+
+    return () => {
+      topAnchorIntersectionObserver.current.unobserve();
+      contactsIntersectionObserver.current.unobserve();
+    }
   }, []);
 
   return (
     <DarkModeContext.Provider value={darkMode}>
       
       <A.Page className="page-container" darkMode={darkMode}>
-        <a name="top"></a>
         <Header setDarkMode={setDarkMode}/>
         <main role="main">
           <div id="landing" ref={landingRef}>
@@ -94,13 +111,18 @@ function App() {
             <Resume />
           </div>
         </main>
-        <footer id="contact" className="page-section">
+        <footer id="contact" className="page-section" ref={footerRef}>
           <Contact />
         </footer>
-        <A.FloatingContactButtonGroup className="floating-contact-buttons">
+        <A.FloatingContactButtonGroup
+          className="floating-contact-buttons"
+          $display={contactsVisible}>
           <ContactButtons />
         </A.FloatingContactButtonGroup>
-        <A.FloatingReturnButton href="#top" display={topAnchorVisible}>
+        <A.FloatingReturnButton
+          href="#"
+          onClick={() => console.log("Clicked anchor")}
+          $display={topAnchorVisible}>
           <BsArrowBarUp/>
         </A.FloatingReturnButton>
       </A.Page>

@@ -25,7 +25,7 @@ export const FloatingReturnButton = styled.a`
   padding: 0.25em;
   font-size: 32px;
   border-color: inherit;
-  display: ${props => props.display ? "initial" : "none"};
+  display: ${props => props.$display ? "initial" : "none"};
   animation: ${appear} 300ms;
 `
 
@@ -34,6 +34,8 @@ export const FloatingContactButtonGroup = styled.div`
   bottom: 50%;
   transform: translateY(50%);
   right: 0;
+  display: ${props => props.$display ? "initial" : "none"};
+  animation: ${appear} 300ms;
 
   & .contact-links {
     display: flex;

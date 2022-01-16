@@ -12,15 +12,15 @@ export const ResumeSectionWrapper = styled.div`
   }
 `
 
-export const ToggleVisButton = styled.button`
-  position: absolute;
-  top: 0;
-  right: 45%;
-`;
+// export const ToggleVisButton = styled.button`
+//   position: absolute;
+//   top: 0;
+//   right: 45%;
+// `;
 
-export const ResumeContainer = styled.div`
+// export const ResumeContainer = styled.div`
 
-`
+// `
 
 export const ResumeIFrame = styled.iframe`
   display: block;
