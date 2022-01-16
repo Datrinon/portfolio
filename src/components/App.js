@@ -15,8 +15,9 @@ import Landing from './Content/Landing';
 
 // svg stuffs
 import {ReactSVG} from "react-svg";
-import triangle from "../data/decals/triangle.svg"
-import triangle2 from "../data/decals/triangle2.svg"
+import triangle from "../data/decals/triangle.svg";
+import polygon from "../data/decals/polygon.svg";
+import wave from "../data/decals/wave.svg";
 
 import {BsArrowBarUp} from "react-icons/bs";
 import ContactButtons from './Content/ContactButtons';
@@ -93,21 +94,40 @@ function App() {
         <main role="main">
           <div id="landing" ref={landingRef}>
             <Landing />
-            <A.AboutUpperTriangle src={triangle} alt="a triangle graphic."/>
+            <A.FooterTriangle src={triangle}/>
           </div>
           <div id="about" className="page-section">
             <About />
-            {/* <ReactSVG
-              style={{transform: "rotate(180deg)"}}
-              src={triangle} alt="a triangle graphic."/> */}
+            {/* <A.DividingShape
+              src={triangle}
+              $rot={"rotate(180deg)"}
+              /> */}
           </div>
           <div id="skills" className="page-section">
+            <A.DividingShape
+              src={polygon}
+              $rot={"rotateY(180deg)"}
+              $bot={"1px"}
+              />
             <Skills />
+            {/* <A.DividingShape
+              src={polygon}
+              $rot={"rotateX(180deg)"}
+              /> */}
           </div>
           <div id="projects" className="page-section">
+            <A.DividingShape
+              src={wave}
+              $rot={"rotate(180deg)"}
+              $bot={"5px"}
+              />
             <Projects />
+            <A.DividingShape
+              src={wave}
+              />
           </div>
           <div id="resume" className="page-section">
+
             <Resume />
           </div>
         </main>

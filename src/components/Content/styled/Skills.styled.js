@@ -14,7 +14,7 @@ export const SkillsContainer = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0.5em auto;
 
     @media ${device.tablet} {
@@ -28,8 +28,9 @@ export const SkillCategoryBox = styled.div`
   border-color: inherit;
   border-radius: 5px;
   width: 180px;
-  padding: 10px 20px;
-  margin: 0.25em 0;
+  padding: 10px 2em;
+  padding-bottom: 1em;
+  margin: 0.25em 1em;
   max-width: 33vw;
   height: 210px;
 

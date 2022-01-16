@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Landing = styled.div`
   position: relative;
   width: 100vw;
-  height: 90vh;
+  height: 75vh;
 
   & .profile-pic {
     width: 100%;

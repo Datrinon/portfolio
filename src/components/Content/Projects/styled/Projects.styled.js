@@ -184,7 +184,7 @@ export const StandardProjectListingContainer = styled.ul`
 const standardProject = css`
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 256px;
   height: auto;
   margin: 2em 2.5em;
   border-radius: 8px;
@@ -214,8 +214,9 @@ const standardProject = css`
 
   & .project-desc {
     margin: 0.5em auto;
-    text-align: justify;
-    width: 90%;
+    text-align: center;
+    line-height: 1.25em;
+    width: 85%;
     height: 70px;
   }
 
@@ -340,6 +341,7 @@ export const ProjectStack = styled.ul`
   &::before {
     position: absolute;
     content: "Built with";
+    color: rgba(78,78,78, 0.8);
     font-variant-caps: all-petite-caps;
     top: -1em;
     left: 50%;

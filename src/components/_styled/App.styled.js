@@ -9,9 +9,15 @@ export const Page = styled.div`
   color: ${props => props.darkMode ? "white" : "black"};
 `
 
-export const AboutUpperTriangle = styled(ReactSVG)`
+export const FooterTriangle = styled(ReactSVG)`
   position:relative;
   bottom: 1px;
+`
+export const DividingShape = styled(ReactSVG)`
+  position: relative;
+  bottom: ${props => props.$bot};
+  left: ${props => props.$lef};
+  transform: ${props => props.$rot ? props.$rot : `initial`};
 `
 
 export const FloatingReturnButton = styled.a`
