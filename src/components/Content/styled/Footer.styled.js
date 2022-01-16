@@ -8,7 +8,20 @@ export const FooterContainer = styled.div`
   color: white;
   text-align: center;
 
-  & .contact-icon {
-    font-size: 3em;
+  & .contact-links {
+    margin: 0.5em 0 1.5em 0;
+  }
+
+  & .contact-link {
+    font-size: 2em;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: inherit;
+    margin: 0 0.5em;
   }
 `
+
+export const FooterLink = styled.a`
+
+`;

@@ -1,21 +1,14 @@
 import React from 'react'
-import { AiFillLinkedin, AiFillGithub, AiTwotoneMail } from 'react-icons/ai'
+import ContactButtons from './ContactButtons';
 
 import * as F from "./styled/Footer.styled";
 
 function Contact() {
   return (
     <F.FooterContainer>
-      <div className="contact-links">
-        <a href="https://www.google.com"
-          className="contact-icon">❓<AiFillLinkedin/></a>
-        <a href="mailto:dtrinh089@gmail.com"
-          className="contact-icon"><AiTwotoneMail /></a>
-        <a href="https://www.github.com/datrinon"
-          className="contact-icon"><AiFillGithub/></a>
-      </div>
+      <ContactButtons />
       <div>
-        Last Update: January 2021.
+        Last Updated in January 2022.
       </div>
     </F.FooterContainer>
   )
