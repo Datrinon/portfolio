@@ -19,6 +19,7 @@ import triangle from "../data/decals/triangle.svg"
 import triangle2 from "../data/decals/triangle2.svg"
 
 import {BsArrowBarUp} from "react-icons/bs";
+import ContactButtons from './Content/ContactButtons';
 
 export const DarkModeContext = React.createContext(null);
 
@@ -56,6 +57,9 @@ function App() {
         <footer id="contact" className="page-section">
           <Contact />
         </footer>
+        <A.FloatingContactButtonGroup className="floating-contact-buttons">
+          <ContactButtons />
+        </A.FloatingContactButtonGroup>
         <A.FloatingReturnButton href="#top">
           <BsArrowBarUp/>
         </A.FloatingReturnButton>

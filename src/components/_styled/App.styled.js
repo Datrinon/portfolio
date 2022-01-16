@@ -25,3 +25,24 @@ export const FloatingReturnButton = styled.a`
   font-size: 32px;
   border-color: inherit;
 `
+
+export const FloatingContactButtonGroup = styled.div`
+  position: fixed;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 0;
+
+  & .contact-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    & .contact-link {
+      border-bottom: 1px solid;
+      padding: 5px;
+    }
+  }
+`
