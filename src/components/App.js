@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useRef, useEffect } from 'react';
 
 import '../css/reset.css';
 import '../css/App.css';
@@ -27,6 +27,46 @@ function App() {
 
   const [darkMode, setDarkMode] = useState(false);
 
+  const [ contactsVisible, setContactsVisible ] = useState(true);
+  const [ topAnchorVisible, setTopAnchorVisible ] = useState(false);
+  // IO code here.
+  const floatingContacts = useRef(null);
+  const floatingReturn = useRef(null);
+  const landingRef = useRef(null);
+  const intersectionObserver = useRef(null);
+
+  useEffect(() => {
+    // set up intersection observers to watch if we get to element of "about me"
+    // then show the arrow bar up thing.
+    const onLandingIntersect = (entries) => {
+      entries.forEach(entry => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          setTopAnchorVisible(false);
+        } else {
+          setTopAnchorVisible(true);
+        }
+      });
+    }
+
+    /**
+     * Applies the following options:
+     * Watch for intersections on the client viewport
+     * Safety bounds of 1em
+     * At a threshold of 0.2 past the bounds, invoke the observer's callback.
+     */
+    const aboutObserverOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+
+    intersectionObserver.current = new IntersectionObserver(onLandingIntersect, aboutObserverOptions);
+
+    intersectionObserver.current.observe(landingRef.current);
+
+  }, []);
+
   return (
     <DarkModeContext.Provider value={darkMode}>
       
@@ -34,7 +74,7 @@ function App() {
         <a name="top"></a>
         <Header setDarkMode={setDarkMode}/>
         <main role="main">
-          <div>
+          <div id="landing" ref={landingRef}>
             <Landing />
             <A.AboutUpperTriangle src={triangle} alt="a triangle graphic."/>
           </div>
@@ -60,7 +100,7 @@ function App() {
         <A.FloatingContactButtonGroup className="floating-contact-buttons">
           <ContactButtons />
         </A.FloatingContactButtonGroup>
-        <A.FloatingReturnButton href="#top">
+        <A.FloatingReturnButton href="#top" display={topAnchorVisible}>
           <BsArrowBarUp/>
         </A.FloatingReturnButton>
       </A.Page>

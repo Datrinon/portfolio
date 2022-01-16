@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {ReactSVG} from 'react-svg';
 
 import COLOR from "./colors.styled";
+import { appear } from "./anim.styled";
 
 export const Page = styled.div`
   background-color: ${props => props.darkMode ? COLOR.BLACK : "white"};
@@ -24,6 +25,8 @@ export const FloatingReturnButton = styled.a`
   padding: 0.25em;
   font-size: 32px;
   border-color: inherit;
+  display: ${props => props.display ? "initial" : "none"};
+  animation: ${appear} 300ms;
 `
 
 export const FloatingContactButtonGroup = styled.div`
