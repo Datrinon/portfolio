@@ -12,7 +12,6 @@ export const ProjectsContainer = styled.div`
   }
 
   & .project-category .title {
-    margin-top: 1em;
     font-weight: bold;
     font-size: ${HEADING_SIZE.LV3};
     text-align: center;
@@ -21,6 +20,15 @@ export const ProjectsContainer = styled.div`
   & .project-category .subtitle {
     margin: 0.5em 0;
     text-align: center;
+  }
+
+  & .title-container {
+    border-top: 2px dotted darkgrey;
+    border-bottom: 2px dotted darkgrey;
+    width: 50%;
+    margin: 1em auto;
+    margin-bottom: 0;
+    padding: 1em 0;
   }
 
   & .section-contents {

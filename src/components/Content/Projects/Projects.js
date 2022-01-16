@@ -11,8 +11,10 @@ function Projects() {
     <P.ProjectsContainer>
       <Section title={"Projects"}>
         <div className="featured project-category">
-          <h3 className="title">Featured</h3>
-          <p className="subtitle">The more notable entries of my recent works.</p>
+          <div className="title-container">
+            <h3 className="title">Featured</h3>
+            <p className="subtitle">The more notable entries of my recent works.</p>
+          </div>
           <P.FeaturedProjectListingContainer>
             {
               FEATURED_PROJECTS.map((project, index) => (
@@ -27,8 +29,10 @@ function Projects() {
           </P.FeaturedProjectListingContainer>
         </div>
         <div className="standard-reel project-category">
-          <h3 className="title">Odin Project: Front-end Projects</h3>
-          <p className="subtitle">Projects I built to reinforce what I learnt through <a href="https://www.theodinproject.com/about" target="_blank" rel="noreferrer">the Odin Project</a>.</p>
+          <div className="title-container">
+            <h3 className="title">The Odin Project Series</h3>
+            <p className="subtitle">Projects I built to reinforce what I learnt through the front-end course of <a href="https://www.theodinproject.com/about" target="_blank" rel="noreferrer">the Odin Project</a>.</p>
+          </div>
           <P.StandardProjectListingContainer>
             {
               ODIN_PROJECTS.map((project, index) => (
