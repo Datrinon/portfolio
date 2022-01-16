@@ -49,5 +49,9 @@ export const FloatingContactButtonGroup = styled.div`
       border-bottom: 1px solid;
       padding: 5px;
     }
+
+    & .contact-link:last-child{
+      border-bottom: 1px solid transparent;
+    } 
   }
 `

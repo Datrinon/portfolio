@@ -80,8 +80,8 @@ function App() {
     contactsIntersectionObserver.current.observe(footerRef.current);
 
     return () => {
-      topAnchorIntersectionObserver.current.unobserve();
-      contactsIntersectionObserver.current.unobserve();
+      topAnchorIntersectionObserver.current.unobserve(landingRef.current);
+      contactsIntersectionObserver.current.unobserve(footerRef.current);
     }
   }, []);
 

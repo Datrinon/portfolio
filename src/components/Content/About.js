@@ -9,6 +9,11 @@ function About() {
 
   const [bioText, setBioText] = useState();
 
+  const thisElement = useRef(null);
+  const intersectionObserver = useRef(null);
+
+  const [displaySubtitle, setDisplaySubtitle] = useState(false);
+
   useEffect(() => {
     (async () => {
       const result = await fetch(bio);
@@ -16,18 +21,40 @@ function About() {
       const text = await result.text();
 
       setBioText(text);
-      // lol
     })();
+
+    const onIntersectAbout = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setDisplaySubtitle(true);
+          observer.unobserve(entry.target);
+        }
+      })
+    }
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 1.0
+    }
+
+    // set up intersection observer
+    intersectionObserver.current = new IntersectionObserver(onIntersectAbout, options);
+    intersectionObserver.current.observe(thisElement.current);
+
+    return () => {
+      intersectionObserver.current.unobserve(thisElement.current);
+    }
   }, []);
 
   return (
-    <A.AboutContainer>
+    <A.AboutContainer ref={thisElement}>
       <A.AboutHeader>
         <A.AboutHeading
           className="section-title">
           Who am I?
         </A.AboutHeading>
-        <A.AboutMeFacts>
+        <A.AboutMeFacts className={displaySubtitle && "reveal"}>
           <A.AboutMeFact className="fact-1" ms={500}>
             Recent Grad</A.AboutMeFact>
           <A.AboutMeFact className="fact-2" ms={1500}>

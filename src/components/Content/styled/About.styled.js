@@ -27,6 +27,12 @@ export const AboutHeading = styled.h2`
 
 export const AboutMeFacts = styled.ul`
   text-align: center;
+  opacity: 0;
+  transition: opacity 600ms;
+
+  &.reveal {
+    opacity: 1;
+  }
   
   li:not(:last-child)::after  {
     content: ", ";
