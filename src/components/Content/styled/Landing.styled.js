@@ -12,6 +12,7 @@ export const Landing = styled.div`
     object-fit: cover;
     position: relative;
     z-index: 0;
+    object-position: top;
   }
 
   & .vignette {

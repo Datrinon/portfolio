@@ -1,6 +1,6 @@
 import React from 'react'
 import * as L from "./styled/Landing.styled";
-import placeholder from "../../data/placeholder2.jpg"
+import placeholder from "../../data/landing.jpg"
 import { BsChevronDoubleDown } from "react-icons/bs"
 
 function Landing() {

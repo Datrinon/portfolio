@@ -9,6 +9,7 @@ export const Header = styled.header`
   top: 0;
   left: 0;
   width: 100%;
+  height: 50px;
   z-index: 10;
 
   & .menu {
@@ -36,12 +37,15 @@ export const Header = styled.header`
     left: 5px;
   }
 
+  & .left-end, .right-end {
+    height: 100%;
+  }
+
   /* This is the CSS for a horizontally spanning header. */
   @media ${device.tablet} {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px;
     align-items: center;
 
     & .menu-toggle-button {
@@ -91,7 +95,7 @@ export const MenuToggleButton = styled.button`
 export const Menu = styled.div`
   & .nav-links .page-sections li {
     margin: 1em 0.5em;
-    font-size: 1.25em;
+    font-size: 120%;
     /* margin: 0 0.25em; */
   }
 `
