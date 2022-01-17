@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import { device } from '../_styled/breakpoints.styled';
-import colors from '../_styled/colors.styled';
+import { standard } from '../_styled/colors.styled';
 
 export const Header = styled.header`
   /* This is the CSS for a vertically spanning sidebar header. */
   position: sticky;
-  border: 1px solid ${colors.ORANGE};
   background-color: inherit;
   top: 0;
   left: 0;

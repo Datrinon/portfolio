@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import {ReactSVG} from 'react-svg';
 
-import COLOR from "./colors.styled";
+import { standard } from "./colors.styled";
 import { appear } from "./anim.styled";
 
 export const Page = styled.div`
-  background-color: ${props => props.darkMode ? COLOR.BLACK : "white"};
+  background-color: ${props => props.darkMode ? standard.BLACK : "white"};
   color: ${props => props.darkMode ? "white" : "black"};
 `
 
