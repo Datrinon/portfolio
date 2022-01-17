@@ -30,7 +30,10 @@ export const Header = styled.header`
 
   & .logo svg {
     width: 30px;
-    height: 24px;
+    height: 28px;
+    transform: scale(1.35);
+    position: relative;
+    left: 5px;
   }
 
   /* This is the CSS for a horizontally spanning header. */
@@ -56,6 +59,7 @@ export const Header = styled.header`
     }
 
     & .logo svg {
+      all: unset;
       width: 48px;
       height: 48px;
     }
@@ -75,7 +79,7 @@ export const LogoContainer = styled.div`
 `
 
 export const NameHeading = styled.h1`
-  font-size: 3rem;
+  font-size: 2rem;
   flex: 0 0 auto;
 `
 
@@ -94,5 +98,5 @@ export const Menu = styled.div`
 
 export const StyledHeaderLink = styled.a`
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 400;
 `
