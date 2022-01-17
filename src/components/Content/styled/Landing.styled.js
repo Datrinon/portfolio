@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Landing = styled.div`
   position: relative;
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
 
   & .profile-pic {
     width: 100%;
@@ -32,13 +32,63 @@ export const Landing = styled.div`
   }
 `
 
-export const LandingCaption = styled.div`
+export const LandingCaptionContainer = styled.div`
   position: absolute;
   bottom: 15%;
   left: 15%;
-  border: 1px solid white;
-  width: 15vw;
-  height: 20vh;
+  width: 150px;
+  height: 110px;
   padding: 1em;
-  background-color: white;
+  background-color: rgba(255 255 255 / 0.75);
+  border-radius: 5px;
+  z-index: 2;
+
+  & .heading {
+    font-size: 125%;
+    text-align: center;
+  }
+
+  & .link {
+    margin-top: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    & .icon {
+      position: relative;
+      font-weight: bolder;
+      display: block;
+    }
+  }
+`
+
+export const LandingCaption = styled.div`
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
+`
+
+export const Prompt = styled.a`
+  font-style: italic;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translate(-50%);
+`
+
+// animation for the icon
+const moveDown = keyframes`
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+`
+
+export const MoveDownIcon = styled.span`
+  animation: ${moveDown} 2s ease-in-out alternate infinite;
 `

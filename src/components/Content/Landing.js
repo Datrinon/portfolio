@@ -14,19 +14,21 @@ function Landing() {
 
       </div>
       <div className="vertical-shadow">
-        
+
       </div>
-      <L.LandingCaption>
-        <p className="heading">
-          Hello! I'm Dan.
-        </p>
-        <a className="link" href="#about">
+      <L.LandingCaptionContainer>
+        <L.LandingCaption>
+          <h2 className="heading">
+            Hello! I'm Dan.
+          </h2>
+        </L.LandingCaption>
+        <L.Prompt className="link" href="#about">
           About Me
-          <span>
-            <BsChevronDoubleDown/>
-          </span>
-        </a>
-      </L.LandingCaption>
+          <L.MoveDownIcon className="icon">
+            <BsChevronDoubleDown />
+          </L.MoveDownIcon>
+        </L.Prompt>
+      </L.LandingCaptionContainer>
     </L.Landing>
   )
 }
