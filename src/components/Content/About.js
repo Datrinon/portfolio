@@ -20,7 +20,13 @@ function About() {
 
       const text = await result.text();
 
-      setBioText(text);
+      const elems = text.split(/\r?\n/).map((text, index) => {
+        return <p key={index} className="bio-text">
+          {text}
+        </p>
+      })
+
+      setBioText(elems);
     })();
 
     const onIntersectAbout = (entries, observer) => {
@@ -64,11 +70,11 @@ function About() {
         </A.AboutMeFacts>
       </A.AboutHeader>
       <A.Bio className="bio">
-        <p className="bio-text">
-          {bioText}
-        </p>
+        {
+          bioText
+        }
         <p className="bio-footer">
-          Please scroll below to see some of the projects that I've accomplished. Thanks for visiting my website!
+          You can take a look at my skills and projects below. Thanks for visiting!
         </p>
       </A.Bio>
     </A.AboutContainer>
