@@ -25,6 +25,10 @@ export const Header = styled.header`
     transition: transform 300ms;
   }
 
+  & .logo {
+    align-self: center;
+  }
+
   & .logo svg {
     width: 30px;
     height: 24px;

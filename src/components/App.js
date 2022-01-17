@@ -99,20 +99,28 @@ function App() {
             <About />
             {/* <A.DividingShape
               src={triangle}
-              $rot={"rotate(180deg)"}
+              $rot={"rotateX(180deg)"}
               /> */}
           </div>
           <div id="skills" className="page-section">
-            <A.DividingShape
+            {/* <A.DividingShape
+              src={triangle}
+              $rot={"rotateY(180deg)"}
+              /> */}
+            {/* <A.DividingShape
               src={polygon}
               $rot={"rotateY(180deg)"}
               $bot={"1px"}
-              />
+              /> */}
             <Skills />
             {/* <A.DividingShape
               src={polygon}
               $rot={"rotateX(180deg)"}
               /> */}
+            <A.DividingShape
+              src={triangle}
+              $rot={"rotate(180deg)"}
+              />
           </div>
           <div id="projects" className="page-section">
             <A.DividingShape
