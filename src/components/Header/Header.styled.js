@@ -30,7 +30,8 @@ export const Header = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    height: 50px;
+    align-items: center;
 
     & .menu-toggle-button {
       visibility: hidden;
