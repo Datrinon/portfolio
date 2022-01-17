@@ -14,7 +14,6 @@ import * as A from "./_styled/App.styled";
 import Landing from './Content/Landing';
 
 // svg stuffs
-import {ReactSVG} from "react-svg";
 import triangle from "../data/decals/triangle.svg";
 import polygon from "../data/decals/polygon.svg";
 import wave from "../data/decals/wave.svg";

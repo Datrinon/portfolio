@@ -6,6 +6,10 @@ import * as H from "./Header.styled";
 import { DarkModeContext } from '../App';
 import DarkModeToggle from '../DarkModeToggle';
 
+//svg
+import {ReactSVG} from "react-svg";
+import logo from "../../data/decals/logo.svg";
+
 function Header({ setDarkMode }) {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +25,9 @@ function Header({ setDarkMode }) {
             <VscClose /> :
             <VscMenu />}
         </H.MenuToggleButton>
+        <ReactSVG
+          className="logo"
+          src={logo}/>
         <H.NameHeading className="logo">
           Dan Trinh
         </H.NameHeading>

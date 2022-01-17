@@ -25,6 +25,11 @@ export const Header = styled.header`
     transition: transform 300ms;
   }
 
+  & .logo svg {
+    width: 30px;
+    height: 24px;
+  }
+
   /* This is the CSS for a horizontally spanning header. */
   @media ${device.tablet} {
     display: flex;
@@ -45,6 +50,11 @@ export const Header = styled.header`
       display: flex;
       flex-direction: row;
       align-items: center;
+    }
+
+    & .logo svg {
+      width: 48px;
+      height: 48px;
     }
   }
 
