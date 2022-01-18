@@ -17,12 +17,12 @@ function Landing() {
 
       </div>
       <L.LandingCaptionContainer>
-        <L.LandingCaption>
+        <L.LandingCaption className="dialogue">
           <h2 className="heading">
             Hello! I'm Dan.
           </h2>
         </L.LandingCaption>
-        <L.Prompt className="link" href="#about">
+        <L.Prompt className="link prompt" href="#about">
           About Me
           <L.MoveDownIcon className="icon">
             <BsChevronDoubleDown />

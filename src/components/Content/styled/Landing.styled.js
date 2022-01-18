@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { palette } from '../../_styled/colors.styled';
 
 export const Landing = styled.div`
   position: relative;
@@ -33,23 +34,70 @@ export const Landing = styled.div`
   }
 `
 
+// 2 second span
+// Complete the appearance in one second
+// After that follow up the text in 50% ->.
+const containerAppear = keyframes`
+  0% {
+    transform: scale(0);
+  }
+
+  85% {
+    transform: scale(1.15);
+  }
+/* 
+  95% {
+    transform: scale(0.95);
+  } */
+
+  100% {
+    transform: scale(1.0);
+  }
+`;
+
+const captionAppear = keyframes`
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
+
+
 export const LandingCaptionContainer = styled.div`
   position: absolute;
   bottom: 15%;
   left: 15%;
-  width: 150px;
+  width: 200px;
   height: 110px;
   padding: 1em;
-  background-color: rgba(255 255 255 / 0.75);
+  background-color: rgba(255 255 255 / 0.85);
   border-radius: 5px;
+  border: 8px double ${palette.sunrayGold};
   z-index: 2;
 
+  /* Animation code */
+  animation: ${containerAppear} ease 800ms;
+
+  & .dialogue {
+    animation: ${captionAppear} ease 1.15s;
+  }
+
+  & .prompt {
+    animation: ${captionAppear} ease 1.5s;
+  }
+
+  /* Layout arrangements */
   & .heading {
     font-size: 125%;
     text-align: center;
   }
 
-  & .link {
+  & .prompt.link {
     margin-top: 1em;
     display: block;
     text-align: center;

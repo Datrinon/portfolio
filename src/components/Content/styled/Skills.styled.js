@@ -56,7 +56,7 @@ export const SkillCategoryBox = styled.div`
     margin-bottom: 0.5em;
     font-size: 2em;
     transform: scale(1.25);
-    color: ${palette.celadonBlue};
+    color: ${palette.royalBlueDark};
   }
 `;
 
