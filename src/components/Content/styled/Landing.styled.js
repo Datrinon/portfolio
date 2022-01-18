@@ -2,9 +2,8 @@ import styled, { keyframes } from 'styled-components'
 
 export const Landing = styled.div`
   position: relative;
-  width: 100vw;
-  max-width:100%;
-  height: 85vh;
+  width: 100%;
+  height: 95vh;
 
   & .profile-pic {
     width: 100%;
