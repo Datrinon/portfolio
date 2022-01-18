@@ -50,27 +50,46 @@ export const FloatingReturnButton = styled.a`
 
 export const FloatingContactButtonGroup = styled.div`
   position: fixed;
-  bottom: 50%;
+  bottom: 25%;
   transform: translateY(50%);
   right: 0;
   display: ${props => props.$display ? "initial" : "none"};
   animation: ${appear} 300ms;
+  z-index: 10;
 
   & .contact-links {
     display: flex;
     flex-direction: column;
-    font-size: 2em;
+    font-size: 1.5em;
     border: 1px solid black;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 
     & .contact-link {
       border-bottom: 1px solid;
+      border-color: black;
       padding: 5px;
     }
 
     & .contact-link:last-child{
       border-bottom: 1px solid transparent;
-    } 
+    }
+
+    & .contact-icon {
+      color: hsl(359deg 40% 100%) !important;
+    }
+
+    & .contact-icon.linkedin {
+      background-color: hsl(201, 15%, 35%);
+    }
+
+    & .contact-icon.email {
+      background-color: hsl(201, 25%, 43%);
+
+    }
+
+    & .contact-icon.github {
+      background-color: hsl(201, 37%, 50%);
+    }
   }
 `

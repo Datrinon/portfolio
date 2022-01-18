@@ -98,6 +98,7 @@ function App() {
           <div id="about" className="about page-section">
             <A.DividingShape
               src={triangle}
+              $bot={"3px"}
               />
             <About />
           </div>

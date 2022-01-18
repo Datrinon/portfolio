@@ -9,19 +9,19 @@ function ContactButtons() {
         href="https://linkedin.com/in/dtrinh089"
         target="_blank"
         rel="noreferrer"
-        className="contact-icon contact-link"><AiFillLinkedin />
+        className="contact-icon contact-link linkedin"><AiFillLinkedin />
       </a>
       <a
         href="mailto:dtrinh089@gmail.com"
         target="_blank"
         rel="noreferrer"
-        className="contact-icon contact-link"><AiTwotoneMail />
+        className="contact-icon contact-link email"><AiTwotoneMail />
       </a>
       <a
         href="https://www.github.com/datrinon"
         target="_blank"
         rel="noreferrer"
-        className="contact-icon contact-link">
+        className="contact-icon contact-link github">
         <AiFillGithub />
       </a>
     </div>

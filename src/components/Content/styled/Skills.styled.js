@@ -36,7 +36,7 @@ export const SkillCategoryBox = styled.div`
   margin: 0.25em 1em;
   max-width: 33vw;
   background-color: ${LIGHT_THEME.BG};
-  box-shadow: ${boxShadow};
+  box-shadow: 0px 4px 0px 1px ${palette.pastelPink};
 
   & .skill-category-heading {
     text-align: center;
@@ -62,7 +62,7 @@ export const SkillCategoryBox = styled.div`
 
 export const SkillBullet = styled.li`
   min-height: 1.5em;
-  font-size: 1.1em;
+  font-size: 1rem;
   line-height: 1.75em;
 
   & .skill-icon {
