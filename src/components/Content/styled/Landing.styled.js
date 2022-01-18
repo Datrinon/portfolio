@@ -93,7 +93,7 @@ export const LandingCaptionContainer = styled.div`
 
   /* Layout arrangements */
   & .heading {
-    font-size: 125%;
+    font-size: 175%;
     text-align: center;
   }
 

@@ -17,7 +17,7 @@ function Header({ setDarkMode }) {
 
   return (
     <H.Header menuOpen={menuOpen}>
-      <H.LogoContainer className="left-end">
+      <H.LogoContainer className="left-end menu-section">
         <H.MenuToggleButton
           className="menu-toggle-button"
           onClick={() => setMenuOpen(prev => !prev)}>
@@ -32,7 +32,7 @@ function Header({ setDarkMode }) {
           Dan Trinh
         </H.NameHeading>
       </H.LogoContainer>
-      <H.Menu className="menu">
+      <H.Menu className="menu menu-section">
         <nav className="nav-links">
           <ul className="page-sections">
             <HeaderLink href={"#about"} text={"About"} />

@@ -188,6 +188,7 @@ const standardProject = css`
   margin: 2em 2.5em;
   border-radius: 8px;
   box-shadow: ${boxShadow};
+  background: white;
   position: relative;
 
   & .image {
