@@ -74,7 +74,7 @@ export const FloatingContactButtonGroup = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 2em;
-    border: 1px solid transparent;
+    border: 1px solid black;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 

@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { device } from '../../_styled/breakpoints.styled';
 import { palette } from '../../_styled/colors.styled';
 
 export const Landing = styled.div`
@@ -71,7 +72,8 @@ const captionAppear = keyframes`
 export const LandingCaptionContainer = styled.div`
   position: absolute;
   bottom: 15%;
-  left: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 200px;
   height: 110px;
   padding: 1em;
@@ -108,6 +110,11 @@ export const LandingCaptionContainer = styled.div`
       font-weight: bolder;
       display: block;
     }
+  }
+
+  @media ${device.tablet} {
+    bottom: 15%;
+    left: 15%;
   }
 `
 
