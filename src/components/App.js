@@ -131,10 +131,12 @@ function App() {
               />
             <Projects />
             <A.DividingShape
+              className="footer-divider"
               src={wave}
+              $top={"3px"}
               />
           </div>
-          <div id="resume" className="page-section">
+          <div id="resume" className="resume page-section">
 
             <Resume />
           </div>

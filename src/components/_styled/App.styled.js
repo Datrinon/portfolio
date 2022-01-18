@@ -3,6 +3,7 @@ import {ReactSVG} from 'react-svg';
 
 import { standard, palette } from "./colors.styled";
 import { appear } from "./anim.styled";
+import { boxShadow } from "../Content/Projects/styled/boxShadow";
 
 export const Page = styled.div`
   background-color: ${props => props.darkMode ? standard.BLACK : "white"};
@@ -20,6 +21,14 @@ export const Main = styled.main`
   & .projects .heading-divider {
     fill: ${palette.marble};
   }
+
+  & .projects .footer-divider {
+    fill: ${palette.marble};
+  }
+
+  & .resume {
+    background: linear-gradient(180deg, ${palette.marble}, ${palette.smoke});
+  }
 `
 
 export const FooterTriangle = styled(ReactSVG)`
@@ -30,6 +39,7 @@ export const DividingShape = styled(ReactSVG)`
   position: relative;
   bottom: ${props => props.$bot};
   left: ${props => props.$left};
+  top: ${props => props.$top};
   transform: ${props => props.$rot ? props.$rot : `initial`};
 `
 
@@ -40,12 +50,15 @@ export const FloatingReturnButton = styled.a`
   z-index: 10;
   text-decoration: none;
   border-radius: 50%;
-  border: 1px solid;
-  padding: 0.25em;
-  font-size: 32px;
-  border-color: inherit;
+  padding: 14px 16px;
+  font-size: 1.5em;
   display: ${props => props.$display ? "initial" : "none"};
   animation: ${appear} 300ms;
+  background: ${palette.sunrayGold};
+
+  & svg {
+    fill: rgb(34,34,34);
+  }
 `
 
 export const FloatingContactButtonGroup = styled.div`
@@ -60,8 +73,8 @@ export const FloatingContactButtonGroup = styled.div`
   & .contact-links {
     display: flex;
     flex-direction: column;
-    font-size: 1.5em;
-    border: 1px solid black;
+    font-size: 2em;
+    border: 1px solid transparent;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 
@@ -80,16 +93,18 @@ export const FloatingContactButtonGroup = styled.div`
     }
 
     & .contact-icon.linkedin {
-      background-color: hsl(201, 15%, 35%);
+      border-top-left-radius: 5px;
+      background-color: hsl(201, 15%, 15%);
     }
 
     & .contact-icon.email {
-      background-color: hsl(201, 25%, 43%);
+      background-color: hsl(201, 25%, 23%);
 
     }
 
     & .contact-icon.github {
-      background-color: hsl(201, 37%, 50%);
+      border-bottom-left-radius: 5px;
+      background-color: hsl(201, 37%, 38%);
     }
   }
 `
