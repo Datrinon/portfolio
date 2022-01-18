@@ -13,12 +13,17 @@ export const FooterContainer = styled.div`
   }
 
   & .contact-link {
-    font-size: 2em;
+    font-size: 2.5em;
     border: 1px solid;
-    padding: 5px 10px;
+    padding: 3px 10px;
     border-radius: 50%;
     color: inherit;
     margin: 0 0.5em;
+
+    & svg {
+      position: relative;
+      top: 8px;
+    }
   }
 `
 
