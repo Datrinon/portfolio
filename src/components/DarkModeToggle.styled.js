@@ -16,7 +16,7 @@ export const DarkModeButton = styled.button`
   flex-wrap: nowrap;
   border-radius: 1em;
   padding: 1px 3px;
-  font-size: 1.25em;
+  font-size: 1.15em;
   cursor: pointer;
 
   & .icon {
@@ -34,22 +34,27 @@ export const Icon = styled.span`
 
   & .sun {
     margin-right: 0.25em;
+    position: relative;
+    right: 1px;
   }
 
   & .moon {
     margin-left : 0.25em;
+    position: relative;
+    left: 2px;
   }
 `
 
 export const Ticker = styled.div`
-  width: ${FONT_SIZE};
-  height: ${FONT_SIZE};
+  width: 27px;
+  height: 26px;
   /* temp color */
   background-color: #a3aaff; 
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%) ${props => props.darkMode ? "translateX(150%)" : "translateX(0%)"};
+  left: 1px;
+  transform: translateY(-50%) ${props => props.darkMode ? "translateX(125%)" : "translateX(0%)"};
   transition: transform 300ms;
   padding: 1px 0;
 `
