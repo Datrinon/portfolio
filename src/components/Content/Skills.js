@@ -14,6 +14,7 @@ function Skills() {
           SKILLS.map((list, index) => {
             return (
               <A.SkillCategoryBox key={index}>
+                <list.icon className="skill-cat-icon"/>
                 <h3 className="skill-category-heading">{list.category}</h3>
                 <ul className="skills-list">
                   {list.skills.map((skill, index) => {

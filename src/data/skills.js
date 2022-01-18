@@ -1,10 +1,13 @@
 import ICON_DIC from "./icons"
 
-
+import { RiCodeSSlashFill } from "react-icons/ri";
+import { BsTextIndentLeft } from "react-icons/bs";
+import { MdComputer } from "react-icons/md";
 
 export const SKILLS = [
   {
     category: "Front-End / Web",
+    icon: RiCodeSSlashFill,
     skills: [
       ICON_DIC.react,
       ICON_DIC.html5,
@@ -15,6 +18,7 @@ export const SKILLS = [
   },
   {
     category: "General Purpose Languages",
+    icon: BsTextIndentLeft,
     skills: [
       ICON_DIC.java,
       ICON_DIC.python
@@ -22,6 +26,7 @@ export const SKILLS = [
   },
   {
     category: "Other Technologies",
+    icon: MdComputer,
     skills: [
       ICON_DIC.regex,
       ICON_DIC.git,
