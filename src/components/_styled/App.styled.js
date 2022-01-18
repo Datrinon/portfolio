@@ -1,12 +1,25 @@
 import styled from "styled-components";
 import {ReactSVG} from 'react-svg';
 
-import { standard } from "./colors.styled";
+import { standard, palette } from "./colors.styled";
 import { appear } from "./anim.styled";
 
 export const Page = styled.div`
   background-color: ${props => props.darkMode ? standard.BLACK : "white"};
   color: ${props => props.darkMode ? "white" : "black"};
+`
+
+export const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+
+  & .about, .skills, .skills .divider {
+    background-color: ${palette.marble};
+  }
+
+  & .projects .heading-divider {
+    fill: ${palette.marble};
+  }
 `
 
 export const FooterTriangle = styled(ReactSVG)`
@@ -16,7 +29,7 @@ export const FooterTriangle = styled(ReactSVG)`
 export const DividingShape = styled(ReactSVG)`
   position: relative;
   bottom: ${props => props.$bot};
-  left: ${props => props.$lef};
+  left: ${props => props.$left};
   transform: ${props => props.$rot ? props.$rot : `initial`};
 `
 

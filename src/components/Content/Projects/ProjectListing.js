@@ -10,7 +10,11 @@ function ProjectListing({project, featured=false}) {
   return (
     <P.Project className={`project ${featured ? "featured" : "standard"}`}>
       <div className="image-wrapper">
-        <img className="image" src={project.photo} alt={`A screenshot from the primary view of the app ${project.name}.`}/>
+        <img
+          loading={featured ? "eager" : "lazy"}
+          className="image"
+          src={project.photo}
+          alt={`A screenshot from the primary view of the app ${project.name}.`}/>
       </div>
       <div className="desc">
         <div className="project-title-wrapper">

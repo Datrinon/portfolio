@@ -90,19 +90,18 @@ function App() {
       
       <A.Page className="page-container" darkMode={darkMode}>
         <Header setDarkMode={setDarkMode}/>
-        <main role="main">
-          <div id="landing" ref={landingRef}>
+        <A.Main role="main">
+          <div id="landing" className="landing" ref={landingRef}>
             <Landing />
-            <A.FooterTriangle src={triangle}/>
+            {/* <A.FooterTriangle src={triangle}/> */}
           </div>
-          <div id="about" className="page-section">
-            <About />
-            {/* <A.DividingShape
+          <div id="about" className="about page-section">
+            <A.DividingShape
               src={triangle}
-              $rot={"rotateX(180deg)"}
-              /> */}
+              />
+            <About />
           </div>
-          <div id="skills" className="page-section">
+          <div id="skills" className="skills page-section">
             {/* <A.DividingShape
               src={triangle}
               $rot={"rotateY(180deg)"}
@@ -117,13 +116,14 @@ function App() {
               src={polygon}
               $rot={"rotateX(180deg)"}
               /> */}
-            <A.DividingShape
+            {/* <A.DividingShape
               src={triangle}
               $rot={"rotate(180deg)"}
-              />
+              /> */}
           </div>
-          <div id="projects" className="page-section">
-            <A.DividingShape
+          <div id="projects" className="projects page-section">
+          <A.DividingShape
+              className="heading-divider"
               src={wave}
               $rot={"rotate(180deg)"}
               $bot={"5px"}
@@ -137,7 +137,7 @@ function App() {
 
             <Resume />
           </div>
-        </main>
+        </A.Main>
         <footer id="contact" className="page-section" ref={footerRef}>
           <Contact />
         </footer>

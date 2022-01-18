@@ -2,8 +2,7 @@ import styled, { css } from 'styled-components'
 import { appear } from '../../../_styled/anim.styled';
 import { device } from '../../../_styled/breakpoints.styled'
 import { HEADING_SIZE } from '../../../_styled/sizes.styled'
-
-const boxShadow = "0px 5px 15px rgb(0 0 0 / 50%)";
+import { boxShadow } from './boxShadow';
 
 export const ProjectsContainer = styled.div`
   & .section-title {
