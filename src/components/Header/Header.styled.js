@@ -25,6 +25,17 @@ export const Header = styled.header`
     transition: transform 300ms;
   }
 
+  &::after {
+      content: "";
+      transition: background-color 300ms;
+      background-color: ${props => props.menuOpen ? "#0000008c" : "transparent"}; 
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      z-index: -1;
+      top: 100%;
+    }
+
   & .logo {
     align-self: center;
   }
