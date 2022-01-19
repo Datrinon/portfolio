@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import * as P from "./styled/Projects.styled";
 
 import { FiCode, FiMonitor } from 'react-icons/fi';
 import { RiCodeSSlashLine } from 'react-icons/ri';
 
+import { ThemeContext } from '../../App'
+
+
 function ProjectListing({project, featured=false}) {
 
+  const theme = useContext(ThemeContext);
+
   return (
-    <P.Project className={`project ${featured ? "featured" : "standard"}`}>
+    <P.Project className={`project ${featured ? "featured" : "standard"}`} theme={theme}>
       <div className="image-wrapper">
         <img
           loading={featured ? "eager" : "lazy"}
@@ -28,7 +33,7 @@ function ProjectListing({project, featured=false}) {
           <p className="project-finish-date">Completed {project.finishDate}</p>
         </div>
         <p className="project-desc">{project.desc}</p>
-        <P.ProjectStack className="project-stack">
+        <P.ProjectStack className="project-stack" theme={theme}>
           {
             project.builtWith.map((skill, index) => {
               // get only the r, g, b values

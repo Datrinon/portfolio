@@ -52,7 +52,11 @@ export const FeaturedProjectListingContainer = styled.ul`
   & .listing-container .project {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+
+    @media ${device.laptop} {
+      align-items: center;
+    }
   }
 
   & .project .image-wrapper {
@@ -118,6 +122,7 @@ export const FeaturedProjectListingContainer = styled.ul`
 
 const featuredProjectDesc = css`
   margin-top: 1em;
+  width: 100%;
 
   & .project-title-wrapper {
     display: grid;
@@ -188,7 +193,7 @@ const standardProject = css`
   margin: 2em 2.5em;
   border-radius: 8px;
   box-shadow: ${boxShadow};
-  background: white;
+  background: ${props => props.theme.BG3};
   position: relative;
 
   & .image {
@@ -199,8 +204,7 @@ const standardProject = css`
 
   & .project-title {
     text-align: center;
-    font-size: 1.25em;
-    font-weight: bold;
+    font-size: 1.4em;
     margin-top: 0.5em;
   }
 
@@ -341,7 +345,7 @@ export const ProjectStack = styled.ul`
   &::before {
     position: absolute;
     content: "Built with";
-    color: rgba(78,78,78, 0.8);
+    color: ${props => props.theme.FG2};
     font-variant-caps: all-petite-caps;
     font-size: 125%;
     top: -1em;

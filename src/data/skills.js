@@ -28,8 +28,8 @@ export const SKILLS = [
     category: "Other Technologies",
     icon: MdComputer,
     skills: [
-      ICON_DIC.regex,
       ICON_DIC.git,
+      ICON_DIC.regex,
       ICON_DIC.bash,
       ICON_DIC.webpack,
       ICON_DIC.excel,

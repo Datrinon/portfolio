@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FEATURED_PROJECTS, ODIN_PROJECTS } from '../../../data/projects'
+import { ThemeContext } from '../../App'
 import Section from '../Section'
 import ProjectListing from './ProjectListing'
 
 import * as P from './styled/Projects.styled'
 
 function Projects() {
+  
+  const theme = useContext(ThemeContext);
 
   return (
     <P.ProjectsContainer>
