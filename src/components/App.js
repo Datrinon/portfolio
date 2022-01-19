@@ -23,6 +23,7 @@ import ContactButtons from './Content/ContactButtons';
 import { LIGHT_THEME, DARK_THEME } from './_styled/colors.styled';
 
 export const DarkModeContext = React.createContext(null);
+export const ThemeContext = React.createContext(null);
 
 
 function App() {
@@ -110,25 +111,46 @@ function App() {
             <A.DividingShape
               src={triangle}
               $bot={"3px"}
+      <ThemeContext.Provider value={theme}>
+
+        <A.Page className="page-container" darkMode={darkMode}>
+          <Header setDarkMode={setDarkMode} />
+          <A.Main role="main" theme={theme}>
+            <div id="landing" className="landing" ref={landingRef}>
+              <Landing />
+              {/* <A.FooterTriangle src={triangle}/> */}
+            </div>
+            <div id="about" className="about page-section">
+              <A.DividingShape
+                src={triangle}
+                $bot={"3px"}
               />
             <About />
           </div>
           <div id="skills" className="skills page-section">
             {/* <A.DividingShape
+              <About />
+            </div>
+            <div id="skills" className="skills page-section">
+              {/* <A.DividingShape
               src={triangle}
               $rot={"rotateY(180deg)"}
               /> */}
             {/* <A.DividingShape
+              {/* <A.DividingShape
               src={polygon}
               $rot={"rotateY(180deg)"}
               $bot={"1px"}
               /> */}
             <Skills />
             {/* <A.DividingShape
+              <Skills />
+              {/* <A.DividingShape
               src={polygon}
               $rot={"rotateX(180deg)"}
               /> */}
             {/* <A.DividingShape
+              {/* <A.DividingShape
               src={triangle}
               $rot={"rotate(180deg)"}
               /> */}
@@ -139,12 +161,24 @@ function App() {
               src={wave}
               $rot={"rotate(180deg)"}
               $bot={"5px"}
+            </div>
+            <div id="projects" className="projects page-section">
+              <A.DividingShape
+                className="heading-divider"
+                src={wave}
+                $rot={"rotate(180deg)"}
+                $bot={"5px"}
               />
             <Projects />
             <A.DividingShape
               className="footer-divider"
               src={wave}
               $top={"3px"}
+              <Projects />
+              <A.DividingShape
+                className="footer-divider"
+                src={wave}
+                $top={"3px"}
               />
           </div>
           <div id="resume" className="resume page-section">
@@ -167,6 +201,28 @@ function App() {
           <BsArrowBarUp/>
         </A.FloatingReturnButton>
       </A.Page>
+            </div>
+            <div id="resume" className="resume page-section">
+
+              <Resume />
+            </div>
+          </A.Main>
+          <footer id="contact" className="page-section" ref={footerRef}>
+            <Contact />
+          </footer>
+          <A.FloatingContactButtonGroup
+            className="floating-contact-buttons"
+            $display={contactsVisible}>
+            <ContactButtons />
+          </A.FloatingContactButtonGroup>
+          <A.FloatingReturnButton
+            href="#"
+            onClick={() => console.log("Clicked anchor")}
+            $display={topAnchorVisible}>
+            <BsArrowBarUp />
+          </A.FloatingReturnButton>
+        </A.Page>
+      </ThemeContext.Provider>
     </DarkModeContext.Provider>
   );
 }

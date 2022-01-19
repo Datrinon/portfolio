@@ -9,7 +9,7 @@ import { device } from "./breakpoints.styled";
 export const Page = styled.div`
   background-color: ${props => props.darkMode ? standard.BLACK : "white"};
   color: ${props => props.darkMode ? "white" : "black"};
-  transition: background-color 300ms, fill 300ms, color 300ms;
+  transition: background-color 100ms, fill 100ms, color 100ms;
 `
 
 export const Main = styled.main`
@@ -57,8 +57,8 @@ export const DividingShape = styled(ReactSVG)`
 
 export const FloatingReturnButton = styled.a`
   position: fixed;
-  right: 1em;
-  bottom: 1em;
+  right: 50px;
+  bottom: 25px;
   z-index: 10;
   text-decoration: none;
   border-radius: 50%;
@@ -67,6 +67,7 @@ export const FloatingReturnButton = styled.a`
   display: ${props => props.$display ? "initial" : "none"};
   animation: ${appear} 300ms;
   background: ${palette.sunrayGold};
+  box-shadow: ${boxShadow};
 
   & svg {
     fill: rgb(34,34,34);
@@ -82,6 +83,7 @@ export const FloatingContactButtonGroup = styled.div`
   display: ${props => props.$display ? "initial" : "none"};
   animation: ${appear} 300ms;
   z-index: 10;
+  box-shadow: ${boxShadow};
 
   @media ${device.tablet} {
     bottom: 25%;
@@ -91,7 +93,6 @@ export const FloatingContactButtonGroup = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 2em;
-    border: 1px solid black;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 
