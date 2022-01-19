@@ -72,7 +72,7 @@ export const FeaturedProjectListingContainer = styled.ul`
   */
   @media ${device.laptop} {
     & .listing-container {
-      height: 40vh;
+      margin: 3em auto;
       max-height: 400px;
     }
     
