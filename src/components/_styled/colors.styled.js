@@ -16,7 +16,13 @@ export const palette = {
 }
 
 export const LIGHT_THEME = {
-  BG: standard.WHITE,
-  FG: standard.BLACK,
-  BUTTON: palette.sunrayGold
-}
+  BG: palette.marble,
+  BGAlt: palette.offWhite,
+  FG: standard.BLACK
+};
+
+export const DARK_THEME = {
+  BG: palette.royalBlueDark,
+  BGAlt: palette.celadonBlue,
+  FG: palette.marble
+};

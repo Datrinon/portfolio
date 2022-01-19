@@ -20,12 +20,15 @@ import wave from "../data/decals/wave.svg";
 
 import {BsArrowBarUp} from "react-icons/bs";
 import ContactButtons from './Content/ContactButtons';
+import { LIGHT_THEME, DARK_THEME } from './_styled/colors.styled';
 
 export const DarkModeContext = React.createContext(null);
+
 
 function App() {
 
   const [darkMode, setDarkMode] = useState(false);
+  const [theme, setTheme] = useState(LIGHT_THEME);
 
   const [ contactsVisible, setContactsVisible ] = useState(true);
   const [ topAnchorVisible, setTopAnchorVisible ] = useState(false);
@@ -85,12 +88,20 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    if (darkMode) {
+      setTheme(DARK_THEME)
+    } else {
+      setTheme(LIGHT_THEME)
+    }
+  }, [darkMode]);
+
   return (
     <DarkModeContext.Provider value={darkMode}>
       
       <A.Page className="page-container" darkMode={darkMode}>
         <Header setDarkMode={setDarkMode}/>
-        <A.Main role="main">
+        <A.Main role="main" theme={theme}>
           <div id="landing" className="landing" ref={landingRef}>
             <Landing />
             {/* <A.FooterTriangle src={triangle}/> */}

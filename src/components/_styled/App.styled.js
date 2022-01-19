@@ -9,30 +9,37 @@ import { device } from "./breakpoints.styled";
 export const Page = styled.div`
   background-color: ${props => props.darkMode ? standard.BLACK : "white"};
   color: ${props => props.darkMode ? "white" : "black"};
+  transition: background-color 300ms, fill 300ms, color 300ms;
 `
 
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
 
+  & .page-section, .page-section > * {
+    transition: background-color 300ms, fill 300ms, color 300ms;
+  }
+
   & .about, .skills, .skills .divider {
-    background-color: ${palette.marble};
+    background-color: ${props => props.theme.BG};
   }
   
   & .projects .heading-divider {
-    fill: ${palette.marble};
+    fill: ${props => props.theme.BG};
   }
 
   & .projects {
-    background-color: ${palette.offWhite};
+    background-color: ${props => props.theme.BGAlt};
   }
 
   & .projects .footer-divider {
-    fill: ${palette.marble};
+    fill: ${props => props.theme.BG};
   }
 
   & .resume {
-    background: linear-gradient(180deg, ${palette.marble}, ${palette.smoke});
+    background: linear-gradient(180deg,
+      ${props => props.theme.BG}, ${props => props.theme.BGAlt}
+    );
   }
 `
 
