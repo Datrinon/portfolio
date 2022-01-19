@@ -343,10 +343,12 @@ export const ProjectStack = styled.ul`
     content: "Built with";
     color: rgba(78,78,78, 0.8);
     font-variant-caps: all-petite-caps;
+    font-size: 125%;
     top: -1em;
     left: 50%;
     transform: translateX(-50%);
     text-decoration: underline;
+    text-decoration-thickness: -5em;
 
 
     @media ${device.laptop} {
@@ -369,6 +371,7 @@ export const ProjectLink = styled.a`
   text-align: center;
   display: flex;
   font-weight: 400;
+  transition: transform 300ms, color 300ms;
 
   & .icon {
     font-size: 1.5rem;
@@ -379,5 +382,10 @@ export const ProjectLink = styled.a`
     align-self: center;
     margin-left: 5px;
     color: inherit;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    color: white;
   }
 `
