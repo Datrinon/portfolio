@@ -35,9 +35,9 @@ export const SkillCategoryBox = styled.div`
   padding: 2em 0;
   border-radius: 5px;
 
-  box-shadow: 0px 4px 0px 1px ${palette.pastelPink};
+  box-shadow: 0px 4px 0px 1px ${props => props.theme.decal};
 
-  background-color: ${LIGHT_THEME.BG};
+  background-color: ${props => props.theme.BG2};
 
   & .skill-category-heading {
     text-align: center;
@@ -58,7 +58,7 @@ export const SkillCategoryBox = styled.div`
     margin-bottom: 0.5em;
     font-size: 2em;
     transform: scale(1.25);
-    color: ${palette.royalBlueDark};
+    color: ${props => props.theme.decal2};
   }
 
   @media ${device.tablet} {
@@ -66,7 +66,7 @@ export const SkillCategoryBox = styled.div`
     width: 180px;
     margin: 0.25em 1em;
     max-width: 33vw;
-    box-shadow: 0px 4px 0px 1px ${palette.pastelPink};
+    box-shadow: 0px 4px 0px 1px ${props => props.theme.decal};
     padding: 1em 2em;
     padding-bottom: 1em;
 

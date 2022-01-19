@@ -105,7 +105,7 @@ function App() {
     <DarkModeContext.Provider value={darkMode}>
       <ThemeContext.Provider value={theme}>
 
-        <A.Page className="page-container" darkMode={darkMode}>
+        <A.Page className="page-container" theme={theme}>
           <Header setDarkMode={setDarkMode} />
           <A.Main role="main" theme={theme}>
             <div id="landing" className="landing" ref={landingRef}>

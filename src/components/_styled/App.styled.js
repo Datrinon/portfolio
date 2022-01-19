@@ -7,8 +7,8 @@ import { boxShadow } from "../Content/Projects/styled/boxShadow";
 import { device } from "./breakpoints.styled";
 
 export const Page = styled.div`
-  background-color: ${props => props.darkMode ? standard.BLACK : "white"};
-  color: ${props => props.darkMode ? "white" : "black"};
+  background-color: ${props => props.theme.BG};
+  color: ${props => props.theme.FG};
   transition: background-color 100ms, fill 100ms, color 100ms;
 `
 
@@ -40,6 +40,12 @@ export const Main = styled.main`
     background: linear-gradient(180deg,
       ${props => props.theme.BG}, ${props => props.theme.BGAlt}
     );
+  }
+
+  /* This section is for spacing adjustments for small gaps */
+  & .skills {
+    position: relative;
+    bottom: 1px;
   }
 `
 
