@@ -77,7 +77,8 @@ export const LandingCaptionContainer = styled.div`
   width: 200px;
   height: 110px;
   padding: 1em;
-  background-color: rgba(255 255 255 / 0.85);
+  background-color: ${props => props.theme.translucent};
+  transition: background-color 300ms;
   border-radius: 5px;
   border: 8px double ${palette.sunrayGold};
   z-index: 2;

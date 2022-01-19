@@ -15,14 +15,21 @@ export const palette = {
   offWhite: "#f9f9f9"
 }
 
+export const translucents = {
+  light: "rgba(255 255 255 / 0.85)",
+  dark: "rgba(34 34 34 / 0.85)"
+}
+
 export const LIGHT_THEME = {
   BG: palette.marble,
   BGAlt: palette.offWhite,
-  FG: standard.BLACK
+  FG: standard.BLACK,
+  translucent: translucents.light,
 };
 
 export const DARK_THEME = {
   BG: palette.royalBlueDark,
   BGAlt: palette.celadonBlue,
-  FG: palette.marble
+  FG: palette.marble,
+  translucent: translucents.dark,
 };

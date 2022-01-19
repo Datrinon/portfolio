@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import * as L from "./styled/Landing.styled";
 import placeholder from "../../data/landing.jpg"
 import { BsChevronDoubleDown } from "react-icons/bs"
+import { ThemeContext } from '../App';
 
 function Landing() {
+
+  const theme = useContext(ThemeContext);
+
   return (
     <L.Landing>
       <img
@@ -16,7 +20,7 @@ function Landing() {
       <div className="vertical-shadow">
 
       </div>
-      <L.LandingCaptionContainer>
+      <L.LandingCaptionContainer theme={theme}>
         <L.LandingCaption className="dialogue">
           <h2 className="heading">
             Hello! I'm Dan.
