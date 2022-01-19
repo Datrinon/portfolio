@@ -5,6 +5,8 @@ import resumePdf from "../../data/resume-DanTrinh.pdf"
 
 import * as R from "./styled/Resume.styled";
 
+import { GoLinkExternal } from "react-icons/go";
+
 function Resume() {
 
   const [hidden, setHidden] = useState(false);
@@ -12,10 +14,13 @@ function Resume() {
   return (
     <R.ResumeSectionWrapper>
       <Section title={"Resume"}>
-        {/* <R.ToggleVisButton
-          onClick={() => setHidden(!hidden)}>Hide</R.ToggleVisButton> */}
         <R.ResumeLinkContainer>
-          <R.ResumeLink href={resumePdf} target="_blank">Open Resume in New Tab</R.ResumeLink>
+          <R.ResumeLink href={resumePdf} target="_blank">
+            <span className="content">
+              Open Resume in New Tab
+              <GoLinkExternal className="icon" />
+            </span>
+          </R.ResumeLink>
         </R.ResumeLinkContainer>
         <R.ResumeIFrame
           hidden={hidden}

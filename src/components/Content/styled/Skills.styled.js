@@ -42,8 +42,8 @@ export const SkillCategoryBox = styled.div`
   & .skill-category-heading {
     text-align: center;
     min-height: 2em;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: initial;
+    font-size: 1.35rem;
   }
 
   & .skills-list {

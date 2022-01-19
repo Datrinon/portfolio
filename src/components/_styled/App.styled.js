@@ -29,7 +29,7 @@ export const Main = styled.main`
   }
 
   & .projects {
-    background-color: ${props => props.theme.BGAlt};
+    background-color: ${props => props.theme.BG2};
   }
 
   & .projects .footer-divider {
@@ -38,7 +38,7 @@ export const Main = styled.main`
 
   & .resume {
     background: linear-gradient(180deg,
-      ${props => props.theme.BG}, ${props => props.theme.BGAlt}
+      ${props => props.theme.BG}, ${props => props.theme.decal2}
     );
   }
 

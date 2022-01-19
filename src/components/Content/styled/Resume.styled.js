@@ -15,16 +15,6 @@ export const ResumeSectionWrapper = styled.div`
   }
 `
 
-// export const ToggleVisButton = styled.button`
-//   position: absolute;
-//   top: 0;
-//   right: 45%;
-// `;
-
-// export const ResumeContainer = styled.div`
-
-// `
-
 export const ResumeLinkContainer = styled.div`
   text-align: center;
   margin: 1em auto;
@@ -36,8 +26,21 @@ export const ResumeLink = styled.a`
   text-decoration: none;
   background-color: ${palette.sunrayGold};
 
-  &:hover {
+  & .content {
+    color: black;
+  }
+
+  & .content:hover {
     color: white;
+  }
+
+  &:active {
+    color: black;
+  }
+
+  & .icon {
+    position: relative;
+    top: 3px;
   }
 `
 
