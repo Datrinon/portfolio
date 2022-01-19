@@ -29,14 +29,15 @@ export const SkillsContainer = styled.div`
 `
 
 export const SkillCategoryBox = styled.div`
-  border-radius: 15px;
-  width: 180px;
-  padding: 1em 2em;
-  padding-bottom: 1em;
-  margin: 0.25em 1em;
-  max-width: 33vw;
-  background-color: ${LIGHT_THEME.BG};
+  width: 75vw;
+  max-width: 400px;
+  margin: 1em;
+  padding: 2em 0;
+  border-radius: 5px;
+
   box-shadow: 0px 4px 0px 1px ${palette.pastelPink};
+
+  background-color: ${LIGHT_THEME.BG};
 
   & .skill-category-heading {
     text-align: center;
@@ -47,7 +48,8 @@ export const SkillCategoryBox = styled.div`
 
   & .skills-list {
     padding-top: 0.25em;
-    height: 225px;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   & .skill-cat-icon {
@@ -57,6 +59,20 @@ export const SkillCategoryBox = styled.div`
     font-size: 2em;
     transform: scale(1.25);
     color: ${palette.royalBlueDark};
+  }
+
+  @media ${device.tablet} {
+    border-radius: 15px;
+    width: 180px;
+    margin: 0.25em 1em;
+    max-width: 33vw;
+    box-shadow: 0px 4px 0px 1px ${palette.pastelPink};
+    padding: 1em 2em;
+    padding-bottom: 1em;
+
+    & .skills-list {
+      height: 225px;
+    }
   }
 `;
 

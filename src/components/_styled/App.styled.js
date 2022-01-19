@@ -4,6 +4,7 @@ import {ReactSVG} from 'react-svg';
 import { standard, palette } from "./colors.styled";
 import { appear } from "./anim.styled";
 import { boxShadow } from "../Content/Projects/styled/boxShadow";
+import { device } from "./breakpoints.styled";
 
 export const Page = styled.div`
   background-color: ${props => props.darkMode ? standard.BLACK : "white"};
@@ -61,14 +62,19 @@ export const FloatingReturnButton = styled.a`
   }
 `
 
+
 export const FloatingContactButtonGroup = styled.div`
   position: fixed;
-  bottom: 25%;
   transform: translateY(50%);
+  bottom: 75%;
   right: 0;
   display: ${props => props.$display ? "initial" : "none"};
   animation: ${appear} 300ms;
   z-index: 10;
+
+  @media ${device.tablet} {
+    bottom: 25%;
+  } 
 
   & .contact-links {
     display: flex;

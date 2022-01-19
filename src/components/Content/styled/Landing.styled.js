@@ -115,6 +115,7 @@ export const LandingCaptionContainer = styled.div`
   @media ${device.tablet} {
     bottom: 15%;
     left: 15%;
+    transform: initial;
   }
 `
 

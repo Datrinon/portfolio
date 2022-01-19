@@ -4,6 +4,7 @@ import { device } from '../../_styled/breakpoints.styled';
 import { HEADING_SIZE } from '../../_styled/sizes.styled';
 
 export const AboutContainer = styled.div`
+  width: 80vw;
   max-width: 800px;
   margin: 0 auto;
 
