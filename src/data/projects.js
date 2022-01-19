@@ -15,8 +15,8 @@ import PixelPainter from "./photos/painter.jpg"
 import Roshambo from "./photos/roshambo.jpg"
 
 // logo imports
-import RTLogo from "./photos/logos/roadtrypper-logo.jpg";
-import MBLogo from "./photos/logos/mako-logo.jpg";
+import RTLogo from "./photos/logos/roadtrypper-logo.png";
+import MBLogo from "./photos/logos/mako-logo.png";
 import BSLogo from "./photos/logos/battleship-logo.png";
 
 

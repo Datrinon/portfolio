@@ -35,6 +35,10 @@ export const ResumeLink = styled.a`
   border-radius: 5px;
   text-decoration: none;
   background-color: ${palette.sunrayGold};
+
+  &:hover {
+    color: white;
+  }
 `
 
 

@@ -11,7 +11,8 @@ export const palette = {
   pastelPink: "hsl(359,51%,74%)",
   sunrayGold: "hsl(36, 87%, 67%)",
   marble: "hsl(55, 35%, 93%)",
-  smoke: "#938572"
+  smoke: "#938572",
+  offWhite: "#f9f9f9"
 }
 
 export const LIGHT_THEME = {

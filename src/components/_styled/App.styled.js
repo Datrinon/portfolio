@@ -18,9 +18,13 @@ export const Main = styled.main`
   & .about, .skills, .skills .divider {
     background-color: ${palette.marble};
   }
-
+  
   & .projects .heading-divider {
     fill: ${palette.marble};
+  }
+
+  & .projects {
+    background-color: ${palette.offWhite};
   }
 
   & .projects .footer-divider {
