@@ -1,9 +1,9 @@
 import styled from 'styled-components';
+import { appear } from '../../_styled/anim.styled';
 import { device } from '../../_styled/breakpoints.styled';
 import { palette } from '../../_styled/colors.styled';
 import { HEADING_SIZE } from '../../_styled/sizes.styled';
 import { boxShadow } from '../Projects/styled/boxShadow';
-
 
 export const ResumeSectionWrapper = styled.div`
   position: relative;
@@ -12,6 +12,23 @@ export const ResumeSectionWrapper = styled.div`
     font-size: ${HEADING_SIZE.LV2};
     text-align: center;
     margin: 0.5em 0;
+  }
+
+  & .section-container {
+    position: relative;
+    z-index: 1;
+  }
+`
+
+export const GradientDecal = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  background: linear-gradient(0deg, ${props => props.$color ?? "transparent"}, transparent);
+
+  &.fade-away {
+    animation: ${appear} reverse 300ms;
   }
 `
 

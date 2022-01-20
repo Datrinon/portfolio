@@ -17,7 +17,7 @@ export const Main = styled.main`
   flex-direction: column;
 
   & .page-section, .page-section > * {
-    transition: background-color 300ms, fill 300ms, color 300ms;
+    transition: background-color 100ms, fill 100ms, color 100ms;
   }
 
   & .about, .skills, .skills .divider {
@@ -37,9 +37,10 @@ export const Main = styled.main`
   }
 
   & .resume {
-    background: linear-gradient(180deg,
+    /* background: linear-gradient(180deg,
       ${props => props.theme.BG}, ${props => props.theme.decal2}
-    );
+    ); */
+    background: ${props => props.theme.BG};
   }
 
   /* This section is for spacing adjustments for small gaps */
