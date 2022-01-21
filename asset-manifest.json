@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9a157ae4.css",
-    "main.js": "/portfolio/static/js/main.934e75a3.js",
+    "main.js": "/portfolio/static/js/main.7b13bfbc.js",
     "static/media/battleships.png": "/portfolio/static/media/battleships.228b2fea1e5e1035bf94.png",
     "static/media/roadtrypper.jpg": "/portfolio/static/media/roadtrypper.9e8abc74009c6ade3a40.jpg",
     "static/media/shopping.jpg": "/portfolio/static/media/shopping.f7ae51baea08f1c8d128.jpg",
@@ -27,10 +27,10 @@
     "static/media/wave.svg": "/portfolio/static/media/wave.cba5a191d906bbb1af263ad8d45b5406.svg",
     "static/media/triangle.svg": "/portfolio/static/media/triangle.dbff72cde7a3b58816bd101e8a4a4118.svg",
     "main.9a157ae4.css.map": "/portfolio/static/css/main.9a157ae4.css.map",
-    "main.934e75a3.js.map": "/portfolio/static/js/main.934e75a3.js.map"
+    "main.7b13bfbc.js.map": "/portfolio/static/js/main.7b13bfbc.js.map"
   },
   "entrypoints": [
     "static/css/main.9a157ae4.css",
-    "static/js/main.934e75a3.js"
+    "static/js/main.7b13bfbc.js"
   ]
 }
