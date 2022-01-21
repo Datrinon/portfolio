@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 293.455 268.806" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="144.708" y1="35.699" x2="144.708" y2="227.157" id="gradient-2" gradientTransform="matrix(0.659418, 0.751777, -0.388457, 0.340733, 63.152401, -85.25296)">
+      <stop offset="0" style="stop-color: rgb(38, 103, 195);"/>
+      <stop offset="1" style="stop-color: rgb(160, 55, 198);"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M 122.195 35.699 L 122.664 179.299 C 122.664 241.08 37.706 242.999 37.706 180.299 C 37.706 118.368 122.483 122.83 122.483 173.985 C 123.383 225.65 161.047 226.691 161.047 226.691 C 161.047 226.691 200.887 224.925 200.887 163.73 C 200.915 156.152 201.236 149.186 200.811 142.83 C 200.811 110.569 201.195 87.699 201.195 83.699 C 201.195 79.699 200.82 164.07 200.82 164.07 C 200.82 227.157 251.71 227.157 251.71 227.157" style="fill-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(#gradient-2-1); stroke-width: 11px;"/>
+  <path class="cls-1" d="M 161.187 139.689 L 245.187 139.689" style="fill-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(82, 76, 187); stroke-width: 11px;"/>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9a157ae4.css",
+    "main.js": "/portfolio/static/js/main.934e75a3.js",
+    "static/media/battleships.png": "/portfolio/static/media/battleships.228b2fea1e5e1035bf94.png",
+    "static/media/roadtrypper.jpg": "/portfolio/static/media/roadtrypper.9e8abc74009c6ade3a40.jpg",
+    "static/media/shopping.jpg": "/portfolio/static/media/shopping.f7ae51baea08f1c8d128.jpg",
+    "static/media/resume-DanTrinh.pdf": "/portfolio/static/media/resume-DanTrinh.2c1790c0f0c9c11a0b6c.pdf",
+    "static/media/landing.jpg": "/portfolio/static/media/landing.7b40cb825f0061fa062c.jpg",
+    "static/media/restaurant.jpg": "/portfolio/static/media/restaurant.eb928fe7fb1f282b9e20.jpg",
+    "static/media/bulletin.jpg": "/portfolio/static/media/bulletin.9b687c3382f7aca03517.jpg",
+    "static/media/todolist.jpg": "/portfolio/static/media/todolist.b5ddaf4f771eaf2601d8.jpg",
+    "static/media/roshambo.jpg": "/portfolio/static/media/roshambo.b6e7b9994c0bdeec62f3.jpg",
+    "static/media/painter.jpg": "/portfolio/static/media/painter.94f1f7190f3c60cc6348.jpg",
+    "static/media/cv.png": "/portfolio/static/media/cv.a78657524c32cf948741.png",
+    "static/media/memory.jpg": "/portfolio/static/media/memory.ccd87ba5604378f2edbd.jpg",
+    "static/media/roadtrypper-logo.png": "/portfolio/static/media/roadtrypper-logo.d78732b13f46eb6dec0c.png",
+    "static/media/tictactoe.jpg": "/portfolio/static/media/tictactoe.8e0c2f74a1afce6c3de6.jpg",
+    "static/media/mako-logo.png": "/portfolio/static/media/mako-logo.daed4760f4869911cd04.png",
+    "static/media/weather.jpg": "/portfolio/static/media/weather.c6d4beaa1e6d2d1cec38.jpg",
+    "static/media/placeholder.webp": "/portfolio/static/media/placeholder.a8a80cc8994dce82c8fc.webp",
+    "static/media/battleship-logo.png": "/portfolio/static/media/battleship-logo.c4061b11cccf54c4190e.png",
+    "static/media/logo.svg": "/portfolio/static/media/logo.8f1a1ba21e458438f7cb24ef80902e12.svg",
+    "static/media/bio.txt": "/portfolio/static/media/bio.7020388204deae335c19.txt",
+    "index.html": "/portfolio/index.html",
+    "static/media/polygon.svg": "/portfolio/static/media/polygon.cfcd5213e102713ef918a248a94a05af.svg",
+    "static/media/wave.svg": "/portfolio/static/media/wave.cba5a191d906bbb1af263ad8d45b5406.svg",
+    "static/media/triangle.svg": "/portfolio/static/media/triangle.dbff72cde7a3b58816bd101e8a4a4118.svg",
+    "main.9a157ae4.css.map": "/portfolio/static/css/main.9a157ae4.css.map",
+    "main.934e75a3.js.map": "/portfolio/static/js/main.934e75a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a157ae4.css",
+    "static/js/main.934e75a3.js"
+  ]
+}
