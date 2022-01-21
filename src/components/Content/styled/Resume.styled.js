@@ -75,7 +75,7 @@ export const ResumeIFrame = styled.iframe`
 
   @media ${device.tablet} {
     width: 90%;
-    height: 11.5in;
+    height: 800px;
     margin-bottom: 0.5em;
   }
 `;

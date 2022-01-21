@@ -64,7 +64,7 @@ function About() {
           <A.AboutMeFact className="fact-1" ms={500}>
             Recent Grad</A.AboutMeFact>
           <A.AboutMeFact className="fact-2" ms={1500}>
-            React.JS Enthusiast</A.AboutMeFact>
+            Front-end Enthusiast</A.AboutMeFact>
           <A.AboutMeFact className="fact-3" ms={3400}>
             a Team Guy</A.AboutMeFact>
         </A.AboutMeFacts>

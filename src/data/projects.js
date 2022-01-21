@@ -23,7 +23,7 @@ import BSLogo from "./photos/logos/battleship-logo.png";
 export const FEATURED_PROJECTS = [
   {
     name: "Roadtrypper",
-    desc: "An online travel journal application. Plan your trips here or record your memories with a live map. This project was completed over a 2 month duration (45 days).",
+    desc: "An online travel journal application. Plan your trips here or record your memories with a live map, powered by the OpenStreetMaps and Nominatim APIs. This project was completed over a 2 month duration (45 days).",
     icon: RTLogo,
     builtWith: [
       ICON_DIC.react,

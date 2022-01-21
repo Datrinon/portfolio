@@ -35,7 +35,7 @@ export const SkillCategoryBox = styled.div`
   padding: 2em 0;
   border-radius: 5px;
 
-  box-shadow: 0px 4px 0px 1px ${props => props.theme.decal};
+  box-shadow: 0px 3px 0px 1px ${props => props.theme.decal};
 
   background-color: ${props => props.theme.BG2};
 

@@ -4,6 +4,7 @@ import { IoLogoJavascript } from "react-icons/io"
 import { SiWebpack, SiFirebase, SiAdobephotoshop, SiJavascript } from "react-icons/si"
 import { VscTerminalBash, VscRegex } from "react-icons/vsc"
 import { AiFillFileExcel } from "react-icons/ai"
+import { SiStyledcomponents } from "react-icons/si";
 
 
 const ICON_DIC = {
@@ -71,6 +72,11 @@ const ICON_DIC = {
     name: "Photoshop",
     icon: SiAdobephotoshop,
     color: "rgb(42, 51, 110)"
+  },
+  styledComponents: {
+    name: "Styled Components",
+    icon: SiStyledcomponents,
+    color: "rgb(253, 154, 226)"
   }
 }
 

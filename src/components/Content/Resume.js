@@ -21,7 +21,7 @@ function Resume() {
   useEffect(() => {
     // when the theme changes...
     // set two.
-    prevGradient.current = theme.decal2;
+    prevGradient.current = gradientTheme;
     // fade for one.
     gradient.current.classList.add("fade-away");
 
