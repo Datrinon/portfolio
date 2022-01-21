@@ -8,11 +8,11 @@ import * as R from "./styled/Resume.styled";
 import { GoLinkExternal } from "react-icons/go";
 import { DarkModeContext, ThemeContext } from '../App';
 
+
 function Resume() {
 
   const darkMode = useContext(DarkModeContext);
   const theme = useContext(ThemeContext);
-  const [hidden, setHidden] = useState(false);
   
   const prevGradient = useRef(theme.decal2);
   const gradient = useRef(null);
@@ -59,7 +59,6 @@ function Resume() {
           </R.ResumeLink>
         </R.ResumeLinkContainer>
         <R.ResumeIFrame
-          hidden={hidden}
           title="Resume View"
           src={resumePdf}
           className="resume">
