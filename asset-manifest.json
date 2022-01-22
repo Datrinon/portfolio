@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9a157ae4.css",
-    "main.js": "/portfolio/static/js/main.7eba25b6.js",
+    "main.js": "/portfolio/static/js/main.69e67472.js",
     "static/media/battleships.png": "/portfolio/static/media/battleships.228b2fea1e5e1035bf94.png",
     "static/media/roadtrypper.jpg": "/portfolio/static/media/roadtrypper.9e8abc74009c6ade3a40.jpg",
     "static/media/shopping.jpg": "/portfolio/static/media/shopping.f7ae51baea08f1c8d128.jpg",
     "static/media/landing.jpg": "/portfolio/static/media/landing.7b40cb825f0061fa062c.jpg",
     "static/media/restaurant.jpg": "/portfolio/static/media/restaurant.eb928fe7fb1f282b9e20.jpg",
     "static/media/bulletin.jpg": "/portfolio/static/media/bulletin.9b687c3382f7aca03517.jpg",
-    "static/media/resume-DanTrinh.pdf": "/portfolio/static/media/resume-DanTrinh.f8a91fb6a5c29da75718.pdf",
+    "static/media/resume-DanTrinh.pdf": "/portfolio/static/media/resume-DanTrinh.d492860de4faade17ea3.pdf",
     "static/media/todolist.jpg": "/portfolio/static/media/todolist.b5ddaf4f771eaf2601d8.jpg",
     "static/media/roshambo.jpg": "/portfolio/static/media/roshambo.b6e7b9994c0bdeec62f3.jpg",
     "static/media/painter.jpg": "/portfolio/static/media/painter.94f1f7190f3c60cc6348.jpg",
@@ -27,10 +27,10 @@
     "static/media/wave.svg": "/portfolio/static/media/wave.cba5a191d906bbb1af263ad8d45b5406.svg",
     "static/media/triangle.svg": "/portfolio/static/media/triangle.dbff72cde7a3b58816bd101e8a4a4118.svg",
     "main.9a157ae4.css.map": "/portfolio/static/css/main.9a157ae4.css.map",
-    "main.7eba25b6.js.map": "/portfolio/static/js/main.7eba25b6.js.map"
+    "main.69e67472.js.map": "/portfolio/static/js/main.69e67472.js.map"
   },
   "entrypoints": [
     "static/css/main.9a157ae4.css",
-    "static/js/main.7eba25b6.js"
+    "static/js/main.69e67472.js"
   ]
 }
