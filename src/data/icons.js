@@ -4,7 +4,7 @@ import { IoLogoJavascript } from "react-icons/io"
 import { SiWebpack, SiFirebase, SiAdobephotoshop, SiJavascript } from "react-icons/si"
 import { VscTerminalBash, VscRegex } from "react-icons/vsc"
 import { AiFillFileExcel } from "react-icons/ai"
-import { SiStyledcomponents } from "react-icons/si";
+import { SiStyledcomponents, SiJest } from "react-icons/si";
 
 
 const ICON_DIC = {
@@ -77,6 +77,11 @@ const ICON_DIC = {
     name: "Styled Components",
     icon: SiStyledcomponents,
     color: "rgb(253, 154, 226)"
+  },
+  jest: {
+    name: "Jest",
+    icon: SiJest,
+    color: "rgb(134, 0, 21)"
   }
 }
 

@@ -12,9 +12,10 @@ export const SKILLS = [
       ICON_DIC.react,
       ICON_DIC.html5,
       ICON_DIC.css,
-      ICON_DIC.styledComponents,
       ICON_DIC.js,
-      ICON_DIC.firebase
+      ICON_DIC.styledComponents,
+      ICON_DIC.firebase,
+      ICON_DIC.jest
     ]
   },
   {
