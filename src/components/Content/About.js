@@ -62,9 +62,9 @@ function About() {
         </A.AboutHeading>
         <A.AboutMeFacts className={displaySubtitle && "reveal"}>
           <A.AboutMeFact className="fact-1" ms={500}>
-            Recent Grad</A.AboutMeFact>
+            Web Dev Hobbyist</A.AboutMeFact>
           <A.AboutMeFact className="fact-2" ms={1500}>
-            Front-end Enthusiast</A.AboutMeFact>
+            IT Enthusiast</A.AboutMeFact>
           <A.AboutMeFact className="fact-3" ms={3400}>
             a Team Guy</A.AboutMeFact>
         </A.AboutMeFacts>
