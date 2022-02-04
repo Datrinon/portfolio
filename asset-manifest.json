@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9a157ae4.css",
-    "main.js": "/portfolio/static/js/main.962de7d9.js",
+    "main.js": "/portfolio/static/js/main.69e67472.js",
     "static/media/battleships.png": "/portfolio/static/media/battleships.228b2fea1e5e1035bf94.png",
     "static/media/roadtrypper.jpg": "/portfolio/static/media/roadtrypper.9e8abc74009c6ade3a40.jpg",
     "static/media/shopping.jpg": "/portfolio/static/media/shopping.f7ae51baea08f1c8d128.jpg",
@@ -21,16 +21,16 @@
     "static/media/placeholder.webp": "/portfolio/static/media/placeholder.a8a80cc8994dce82c8fc.webp",
     "static/media/battleship-logo.png": "/portfolio/static/media/battleship-logo.c4061b11cccf54c4190e.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.8f1a1ba21e458438f7cb24ef80902e12.svg",
-    "static/media/bio.txt": "/portfolio/static/media/bio.6f86ebb637ea4d922208.txt",
+    "static/media/bio.txt": "/portfolio/static/media/bio.7020388204deae335c19.txt",
     "index.html": "/portfolio/index.html",
     "static/media/polygon.svg": "/portfolio/static/media/polygon.cfcd5213e102713ef918a248a94a05af.svg",
     "static/media/wave.svg": "/portfolio/static/media/wave.cba5a191d906bbb1af263ad8d45b5406.svg",
     "static/media/triangle.svg": "/portfolio/static/media/triangle.dbff72cde7a3b58816bd101e8a4a4118.svg",
     "main.9a157ae4.css.map": "/portfolio/static/css/main.9a157ae4.css.map",
-    "main.962de7d9.js.map": "/portfolio/static/js/main.962de7d9.js.map"
+    "main.69e67472.js.map": "/portfolio/static/js/main.69e67472.js.map"
   },
   "entrypoints": [
     "static/css/main.9a157ae4.css",
-    "static/js/main.962de7d9.js"
+    "static/js/main.69e67472.js"
   ]
 }
